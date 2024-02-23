@@ -6,10 +6,10 @@ A set of Python modules to perform image processing in OpenCV
 |-----------------|-----------------|-----------------|-----------------|
 | Blob    | OpenCV trackers    | Camera access    | Mouse painting    |
 | Colour    | ORB tracker   | Pointcloud viewer    | Color threshold selector   |
-| Depth    | 3D ROI track    | **RealSense camera**    | Multi-threading  |
-| Edges    | Row 2, Col 2    | Row 2, Col 3    | Row 2, Col 4    |
-| Eye and face    | Row 2, Col 2    | Row 2, Col 3    | Row 2, Col 4    |
-| People    | Row 2, Col 2    | Row 2, Col 3    | Row 2, Col 4    |
+| Depth    | 3D ROI track    | *RealSense camera*    | Multi-threading  |
+| Edges    |     |    |     |
+| Eye and face    |    |    |   |
+| People    |   |     |     |
 
 - Detection
   - Blob detection
