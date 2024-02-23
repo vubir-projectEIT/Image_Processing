@@ -4,10 +4,10 @@ A set of Python modules to perform image processing in OpenCV
 
 <table style="width:100%">
   <tr>
-    <th style="width:25%">Detection</th>
-    <th style="width:25%">Tracking</th>
+    <th style="width:25%">Detection modules</th>
+    <th style="width:25%">Tracking modules</th>
     <th style="width:25%">RealSense camera</th>
-    <th style="width:25%">Support</th>
+    <th style="width:25%">Support modules</th>
   </tr>
   <tr>
     <td>Blob detector</td>
