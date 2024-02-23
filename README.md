@@ -20,7 +20,7 @@ A set of Python modules to perform image processing in OpenCV
   <tr>
     <td>OpenCV trackers</td>
     <td>Pointcloud viewer</td>
-    <td>*RealSense camera*</td>
+    <td>RealSense camera</td>
   </tr>
   <tr>
     <td>Mouse painting</td>
@@ -28,27 +28,6 @@ A set of Python modules to perform image processing in OpenCV
     <td>Multi-threading</td>
   </tr>
 </table>
-
-- Detection
-  - Blob detection
-  - Colour detection
-  - Depth detection
-  - Edge detection
-  - Eye and face detection
-  - People detection
-- Tracking
-  - OpenCV trackers
-  - ORB tracking
-  - 3D ROI tracking
-  - (helper module) Simple ROI selector 
-- Supporting modules
-  - Mouse painting
-  - Color threshold selector
-  - Multi-threading
-- RealSense camera
-  - Camera access
-  - Pointcloud viewer
-  - (helper module) RealSense camera
 
 ## Get started with OpenCV
 
