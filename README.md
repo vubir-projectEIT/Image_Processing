@@ -29,7 +29,7 @@ A set of Python modules to perform image processing in OpenCV
   </tr>
   <tr>
     <td>Edge detector</td>
-    <td> Simple ROI selector</td>
+    <td> _Simple ROI selector_ </td>
     <td> </td>
     <td> </td>
   </tr>
