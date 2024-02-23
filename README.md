@@ -47,6 +47,7 @@ A set of Python modules to perform image processing in OpenCV
     <td> </td>
     <td> </td>
   </tr>
+
 </table>
 
 ## Get started with OpenCV
@@ -59,8 +60,9 @@ In order to get started, we will install [Anaconda](https://www.anaconda.com/dow
 
 <img width="1728" alt="Screenshot 2024-02-23 at 13 02 22" src="https://github.com/vubir-projectEIT/Image_Processing/assets/152272505/c96af1be-6622-4fca-9b58-d3c694fd112b">
 
+
 2. Install OpenCV
 
-
+<img width="1522" alt="Screenshot 2024-02-23 at 13 34 07" src="https://github.com/vubir-projectEIT/Image_Processing/assets/152272505/b6fc6a64-1968-4e29-87cd-47c66c0fb4cb">
 
 ## 
