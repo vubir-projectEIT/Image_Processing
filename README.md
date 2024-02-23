@@ -11,26 +11,39 @@ A set of Python modules to perform image processing in OpenCV
   </tr>
   <tr>
     <td>Blob detector</td>
-    <td>Colour</td>
-    <td>Depth</td>
-    <td>Edges</td>
-    <td>Eye and face</td>
-    <td>People</td>
-  </tr>
-  <tr>
     <td>OpenCV trackers</td>
-    <td>Pointcloud viewer</td>
-    <td>RealSense camera</td>
+    <td>Mouse painting</td>
+    <td>qwerty</td>
   </tr>
   <tr>
-    <td>Mouse painting</td>
+    <td>Colour detector</td>
+    <td>ORB tracker</td>
     <td>Color threshold selector</td>
-    <td>Multi-threading</td>
+    <td>qwerty</td>
   </tr>
   <tr>
-    <td>Mouse painting</td>
-    <td>Color threshold selector</td>
+    <td>Depth detector</td>
+    <td>3D ROI tracker</td>
     <td>Multi-threading</td>
+    <td>qwerty</td>
+  </tr>
+  <tr>
+    <td>Edge detector</td>
+    <td> Simple ROI selector</td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>Eye & face detector</td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>People detector</td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
   </tr>
 </table>
 
