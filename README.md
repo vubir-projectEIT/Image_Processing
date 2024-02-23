@@ -1,6 +1,12 @@
 A set of Python modules to perform image processing in OpenCV
 
 ## Structure of the toolbox
+
+| Column 1 Header | Column 2 Header | Column 3 Header | Column 4 Header |
+|-----------------|-----------------|-----------------|-----------------|
+| Row 1, Col 1    | Row 1, Col 2    | Row 1, Col 3    | Row 1, Col 4    |
+| Row 2, Col 1    | Row 2, Col 2    | Row 2, Col 3    | Row 2, Col 4    |
+
 - Detection
   - Blob detection
   - Colour detection
