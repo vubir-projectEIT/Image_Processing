@@ -12,20 +12,20 @@ A set of Python modules to perform image processing in OpenCV
   <tr>
     <td>Blob detector</td>
     <td>OpenCV trackers</td>
+    <td> </td>
     <td>Mouse painting</td>
-    <td>qwerty</td>
   </tr>
   <tr>
     <td>Colour detector</td>
     <td>ORB tracker</td>
+    <td> </td>
     <td>Color threshold selector</td>
-    <td>qwerty</td>
   </tr>
   <tr>
     <td>Depth detector</td>
     <td>3D ROI tracker</td>
+    <td> </td>
     <td>Multi-threading</td>
-    <td>qwerty</td>
   </tr>
   <tr>
     <td>Edge detector</td>
