@@ -63,6 +63,17 @@ In order to get started, we will install [Anaconda](https://www.anaconda.com/dow
 
 2. Install OpenCV
 
-<img width="1522" alt="Screenshot 2024-02-23 at 13 34 07" src="https://github.com/vubir-projectEIT/Image_Processing/assets/152272505/b6fc6a64-1968-4e29-87cd-47c66c0fb4cb">
+  - For Mac users 
+
+Once the installation of Anaconda is done, open the terminal and type '*pip install opencv-contrib-python*'  in your command line.
+
+<img width="682" alt="Screenshot 2024-02-23 at 13 51 52" src="https://github.com/vubir-projectEIT/Image_Processing/assets/152272505/0dab2886-7c4e-4ca9-ab7a-a8aa9e63567e">
+
+  - For Windows users
+
+Once the installation of Anaconda is done, search for '*Anaconda Prompt*' from the search bar and yype '*pip install opencv-contrib-python*' in your anaconda prompt.
+
+
+
 
 ## 
