@@ -14,7 +14,7 @@ A set of Python modules to perform image processing in OpenCV
     <td>Colour</td>
     <td>Depth</td>
     <td>Edges</td>
-    <td>Eye & face</td>
+    <td>Eye and face</td>
     <td>People</td>
   </tr>
   <tr>
