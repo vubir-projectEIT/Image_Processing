@@ -19,17 +19,17 @@ A set of Python modules to perform image processing in OpenCV
     <td>Colour detector</td>
     <td>ORB tracker</td>
     <td> </td>
-    <td>Color threshold selector</td>
+    <td>Color threshold selector </td>
   </tr>
   <tr>
     <td>Depth detector</td>
     <td>3D ROI tracker</td>
     <td> </td>
-    <td>Multi-threading</td>
+    <td>Multi-threading </td>
   </tr>
   <tr>
     <td>Edge detector</td>
-    <td> _Simple ROI selector_ </td>
+    <td> Simple ROI selector (h) </td>
     <td> </td>
     <td> </td>
   </tr>
