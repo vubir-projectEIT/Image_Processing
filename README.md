@@ -7,7 +7,6 @@ A set of Python modules to perform image processing in OpenCV
   - Depth detection
   - Edge detection
   - Eye and face detection
-
   - People detection
 - Tracking
   - OpenCV trackers
