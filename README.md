@@ -27,6 +27,11 @@ A set of Python modules to perform image processing in OpenCV
     <td>Color threshold selector</td>
     <td>Multi-threading</td>
   </tr>
+  <tr>
+    <td>Mouse painting</td>
+    <td>Color threshold selector</td>
+    <td>Multi-threading</td>
+  </tr>
 </table>
 
 ## Get started with OpenCV
