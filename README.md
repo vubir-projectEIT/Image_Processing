@@ -1,5 +1,3 @@
-<img width="1728" alt="Screenshot 2024-02-23 at 13 02 22" src="https://github.com/vubir-projectEIT/Image_Processing/assets/152272505/c96af1be-6622-4fca-9b58-d3c694fd112b"># Toolbox: Biomedical Engineering Signal and Image processing
-
 A set of Python modules to perform image processing in OpenCV
 
 ## Structure of the toolbox
@@ -31,4 +29,4 @@ OpenCV (Open Source Computer Vision Library) is an open-source computer vision a
 
 In order to get started, we will install [Anaconda](https://www.anaconda.com/download), a popular Python data science platform. It is strongly recommended to work in Spyder or PyCharm from inside the Anaconda environment.
 
-![Uploading Screenshot 2024-02-23 at 13.02.22.png…]()
+<img width="1728" alt="Screenshot 2024-02-23 at 13 02 22" src="https://github.com/vubir-projectEIT/Image_Processing/assets/152272505/c96af1be-6622-4fca-9b58-d3c694fd112b"># Toolbox: Biomedical Engineering Signal and Image processing
