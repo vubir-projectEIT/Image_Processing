@@ -2,7 +2,7 @@ A set of Python modules to perform image processing in OpenCV
 
 ## Structure of the toolbox
 
-| Detection | Tracking | RealSense camera | Support |
+| \ \ \ Detection\ \ \ | Tracking | RealSense camera | Support |
 |-----------------|-----------------|-----------------|-----------------|
 | Blob    | OpenCV trackers    | Camera access    | Mouse painting    |
 | Colour    | ORB tracker   | Pointcloud viewer    | Color threshold selector   |
