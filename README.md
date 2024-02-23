@@ -1,5 +1,7 @@
 # Toolbox: Biomedical Engineering Signal and Image processing
 
-Structure of the toolbox
+A set of Python modules to perform image processing
+
+## Structure of the toolbox
 - one
   - two
