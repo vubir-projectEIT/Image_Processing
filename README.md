@@ -71,9 +71,4 @@ Once the installation of Anaconda is done, open the terminal and type '*pip inst
 
   - For Windows users
 
-Once the installation of Anaconda is done, search for '*Anaconda Prompt*' from the search bar and yype '*pip install opencv-contrib-python*' in your anaconda prompt.
-
-
-
-
-## 
+Once the installation of Anaconda is done, search for '*Anaconda Prompt*' from the search bar and type '*pip install opencv-contrib-python*' in your Anaconda prompt.
