@@ -47,6 +47,12 @@ A set of Python modules to perform image processing in OpenCV
     <td> </td>
     <td> </td>
   </tr>
+  <tr>
+    <td>Virtual PPG</td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
 
 </table>
 
