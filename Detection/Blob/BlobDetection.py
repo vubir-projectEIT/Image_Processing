@@ -120,7 +120,10 @@ if __name__ == '__main__':
 
             # Show both images in windows
             cv2.imshow("Color Image", color_image)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
+            
+            # Escape
+            k = cv2.waitKey(1)
+            if k == 27:
                 break
 
     finally:
