@@ -5,7 +5,7 @@ In this module, we implement a heart rate sensor from scratch using image proces
 We will use this case study to get an overview of all the steps required to do image analysis and dive deep into a specific application. 
 When you are able to measure your heart rate in real-time using your camera, you can connect this biomedical information to any other device or application.
 
-We provide you with a template [Virtual_PPG_template.py](https://github.com/LorisGiordano/ProjectEIT-Image-processing-toolbox/blob/main/VirtualPPG/Virtual_PPG_template.py) and some helper functions [Virtual_PPG_helpers.py](https://github.com/LorisGiordano/ProjectEIT-Image-processing-toolbox/blob/main/VirtualPPG/Virtual_PPG_helpers.py) to start your journey. 
+We provide you with a template [Virtual_PPG_template.py](https://github.com/vubir-projectEIT/Image_Processing/blob/main/VirtualPPG/Virtual_PPG_template.py) and some helper functions [Virtual_PPG_helpers.py](https://github.com/vubir-projectEIT/Image_Processing/blob/main/VirtualPPG/Virtual_PPG_helpers.py) to start your journey. 
 Let's start with the idea behind the virtual PPG and a small overview of what we aim to do.
 
 ### How does it work?
