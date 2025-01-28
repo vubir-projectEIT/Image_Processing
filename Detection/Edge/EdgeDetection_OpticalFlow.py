@@ -51,8 +51,10 @@ if __name__ == "__main__":
     
         cv2.imshow("Optical Flow", rgb)
         cv2.imshow("Edges", edges)
-        key = cv2.waitKey(10) & 0xFF
-        if key == ord('q'):
+        
+        # Escape
+        k = cv2.waitKey(1)
+        if k == 27:
             break
     
         prev_frame = frame
