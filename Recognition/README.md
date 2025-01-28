@@ -6,14 +6,14 @@ We will understand how our computer can understand human attributes like hands a
 We will look at the fastest and most powerful machine-learning models that are used for these tasks and learn how to process an image using those tools. 
 What we can do with these results is up to you.
 
-### Face
+### [Face](https://github.com/vubir-projectEIT/Image_Processing/edit/main/Recognition/Face)
 
 Train a machine learning model to recognize different people on the fly.
 Investigate how local binary pattern histograms are used to encode the face of a human and how to train and run machine learning models.
 
 - More information: [LBPH](https://www.geeksforgeeks.org/face-recognition-with-local-binary-patterns-lbps-and-opencv/)
   
-### Hand
+### [Hand](https://github.com/vubir-projectEIT/Image_Processing/edit/main/Recognition/Hand)
 
 Use a state-of-the-art hand detection and hand gesture recognition model developed by Google.
 Investigate more advanced machine learning models like deep learning and neural networks. 
