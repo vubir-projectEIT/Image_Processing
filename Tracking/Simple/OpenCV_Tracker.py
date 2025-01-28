@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Mar  8 09:43:32 2019
-
-@author: mcovenek
-"""
-
-
 """ IMPORTS """
 
 import cv2
