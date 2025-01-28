@@ -1,8 +1,3 @@
-# Dr. ir. Meshia Cédric OVENEKE
-# Department of Electronics and Informatics (ETRO)
-# mcovenek@etrovub.be
-# 11-02-2020
-
 """ IMPORTS """
 
 import warnings
