@@ -48,7 +48,7 @@ The second step will be to set up your environment to have full control over the
 
 `conda install --name <your_environment_name> python=3.12`
 
-- Activate your environment and setup a project folder (you have to do this everytime you open your terminal):
+- Activate your environment and setup a project folder (you have to do this every time you open your terminal):
 
 `conda activate <your_environment_name>`
 
