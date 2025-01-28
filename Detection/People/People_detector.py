@@ -76,7 +76,10 @@ if __name__ == '__main__':
             out.write(frame.astype('uint8'))
             # Display the resulting frame
             cv2.imshow('frame',frame)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
+            
+            # Escape
+            k = cv2.waitKey(1)
+            if k == 27:
                 break
             
     finally:
