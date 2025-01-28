@@ -1,13 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Jan  6 15:38:01 2025
-
-@author: loris
-
-Adapted from https://github.com/ibush/231A_Project/blob/master/src/hrFaceDetection.py
-"""
-
 """
 Important message for the developer:
 
