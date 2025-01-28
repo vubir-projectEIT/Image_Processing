@@ -42,13 +42,13 @@ The second step will be to set up your environment to have full control over the
 <img height="350" alt="MacOS Terminal" src="https://github.com/user-attachments/assets/736567fd-a9c7-4e43-81cb-bc14e5d7091d">
 <img height="350" alt="Windows Anaconda Prompt" src="https://github.com/user-attachments/assets/49962f75-c2d1-4950-918a-eafb0a3888e4">
 
-- Create your environment and install Python:
+- Create your environment and install Python (you only need to do this once):
 
 `conda create --name <your_environment_name>`
 
 `conda install --name <your_environment_name> python=3.12`
 
-- Activate your environment and setup a project folder
+- Activate your environment and setup a project folder (you have to do this everytime you open your terminal):
 
 `conda activate <your_environment_name>`
 
