@@ -1,8 +1,3 @@
-"""
-Adapted from https://github.com/ibush/231A_Project/blob/master/src/hrFaceDetection.py
-"""
-
-
 """ IMPORTS """
 
 import cv2
