@@ -1,13 +1,6 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Tue Feb 20 15:11:04 2024
-
-@author: loris
-
 derived from mediapipe implementation of hand tracking and gesture recognition of Google
  (https://developers.google.com/mediapipe/solutions/vision/gesture_recognizer)
-
 """
 
 
