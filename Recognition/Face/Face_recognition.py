@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Feb 16 20:07:53 2024
-
-@author: loris
-"""
-
 """
 Go through the code carefully before running it
 Read the annotations and ask questions (to the internet, chatGPT, or the assistents)
