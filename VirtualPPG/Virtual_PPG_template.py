@@ -51,8 +51,12 @@ def get_heart_rate(window, fps, window_size, min_heart_rate=45, max_heart_rate=2
 
 """ PARAMETERS TO SET """
 
+# Path to cv2/data. If this gives an error:
+#   - option 1: Find the 'haarcascade_eye.xml' file on your computer and modify the path hereunder to the path of the folder containing 'haarcascade_eye.xml'.
+#   - option 2: You can also download haarcascade_eye.xml from the internet, place it in your project folder, and modify the path hereunder.
+cascade_dir = os.environ['CONDA_PREFIX'] + r"/lib/python3.12/site-packages/cv2/data"
+
 # Haar cascade face classifier path
-CASCADE_PATH = r"/Users/loris/anaconda3/envs/EIT/lib/python3.12/site-packages/cv2/data"
 CASCADE_PATH = CASCADE_PATH + r"/haarcascade_frontalface_default.xml"
 
 # Set window time in seconds
