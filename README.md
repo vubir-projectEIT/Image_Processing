@@ -1,6 +1,6 @@
 # Project EIT - Image processing toolbox
 
-A set of Python modules to perform machine learning and image processing
+A set of Python modules to use image processing in your project.
 
 ## Structure of the toolbox
 
