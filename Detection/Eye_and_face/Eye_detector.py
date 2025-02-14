@@ -8,8 +8,12 @@ import cv2
 
 if __name__ == '__main__':
 
+    # Path to cv2/data. If this gives an error:
+    #   - option 1: Find the 'haarcascade_eye.xml' file on your computer and modify the path hereunder to the path of the folder containing 'haarcascade_eye.xml'.
+    #   - option 2: You can also download haarcascade_eye.xml from the internet, place it in your project folder, and modify the path hereunder.
+    cascade_dir = os.environ['CONDA_PREFIX'] + r"/lib/python3.12/site-packages/cv2/data"
+    
     # Load the cascade
-    cascade_dir = os.environ['CONDA_PREFIX'] + r"/lib/python3.13/site-packages/cv2/data"
     eye_cascade = cv2.CascadeClassifier(cascade_dir + r"/haarcascade_eye.xml")
     face_cascade = cv2.CascadeClassifier(cascade_dir + r"/haarcascade_frontalface_default.xml")
 
