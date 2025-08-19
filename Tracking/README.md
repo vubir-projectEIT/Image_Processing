@@ -1,27 +1,29 @@
-# Tracking
+🇳🇱 Nederlands | [🇬🇧 English](./README_en.md)
 
-Track objects and regions of images using opencv. 
-In this module, we will focus on tracking the position of our objects in our image in time. 
-We will check advanced methods to find something important in the image and keep following it without losing its trail. 
-Once you can track objects optimally, you can build anything around this to create a nice project.
+# Tracking module
 
-### [Simple tracking](https://github.com/vubir-projectEIT/Image_Processing/edit/main/Tracking/Simple)
+Volg objecten en regio’s in images met behulp van OpenCV.
+In deze module focussen we ons op het tracken van de positie van onze objecten in de tijd.
+We bekijken geavanceerde methoden om iets belangrijks in het beeld te vinden en het te blijven volgen zonder het spoor te verliezen.
+Zodra je objecten optimaal kan tracken, kan je hier alles rond bouwen om een mooi project te maken.  
 
-Explore different simple methods for object tracking implemented by Opencv.
-Dive into the logic of the different methods and elect the best method for your application.
+### [Eenvoudig tracken](https://github.com/vubir-projectEIT/Image_Processing/edit/main/Tracking/Simple)
 
-- More information: [Tracking](https://www.learnopencv.com/object-tracking-using-opencv-cpp-python/)
+Verken verschillende eenvoudige methodes voor object tracking geïmplementeerd in OpenCV.
+Duik in de logica van de verschillende methodes en kies de beste methode voor jouw applicatie.  
+
+- Meer informatie: [Tracking](https://www.learnopencv.com/object-tracking-using-opencv-cpp-python/)
   
 ### [3D tracking](https://github.com/vubir-projectEIT/Image_Processing/edit/main/Tracking/3D)
 
-Track a region of interest in 3 dimensions using a depth camera.
-Investiage how depth sensing works and how to track regions of interest over time using Kalman filters.
+Volg een regio van interesse in drie dimensies met behulp van een depth camera.
+Onderzoek hoe depth sensing werkt en hoe je regio’s van interesse in de tijd kan volgen met Kalman filters.  
 
-- More information: [Kalman Filters](https://pieriantraining.com/kalman-filter-opencv-python-example/)
+- Meer informatie: [Kalman Filters](https://pieriantraining.com/kalman-filter-opencv-python-example/)
 
 ### [ORB tracking](https://github.com/vubir-projectEIT/Image_Processing/edit/main/Tracking/ORB)
 
-Track similar objects in a image using a efficient ORB algorithm.
-Go in depth in the feature keypoints and derived descriptors that allow ORB to quickly find objects in images.
+Volg gelijkaardige objecten in een image met een efficiënt ORB algoritme.
+Ga dieper in op de feature keypoints en afgeleide descriptors die ORB toelaten om snel objecten in beelden te vinden.  
 
-- More information: [ORB](https://medium.com/thedeephub/detecting-and-tracking-objects-with-orb-using-opencv-d228f4c9054e)
+- Meer informatie: [ORB](https://medium.com/thedeephub/detecting-and-tracking-objects-with-orb-using-opencv-d228f4c9054e)
