@@ -51,7 +51,7 @@ By doing this, we can create a list of three color values for each time point, g
 We have now simplified our input stream of images (i.e. our video) to an input stream of three values: mean red, mean green, and mean blue found in the region of interest.
 Similar to how the color of our skin captured by a camera is a mix of red, green, and blue, the pulsing signal that we are looking for is spread over the red, green, and blue channels. 
 This additional step of independent component analysis will allow us to untangle the color signal into the most interesting pulsating signal and the other ones.
-Check for yourself what independent component analysis is and how it works!
+Check [here](https://www.geeksforgeeks.org/machine-learning/ml-independent-component-analysis/) for yourself what independent component analysis is and how it works!
 
 #### Heart rate estimation
 Following the three previous, we now have three signals representing the change of color in our region of interest over time. 
