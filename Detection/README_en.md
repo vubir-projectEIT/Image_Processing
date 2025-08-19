@@ -1,3 +1,5 @@
+[🇳🇱 Nederlands](./README.md) | 🇬🇧 English
+
 # Detection module
 
 Detect objects, colors, edges, faces, people, and much more using opencv. 
