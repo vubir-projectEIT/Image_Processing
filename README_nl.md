@@ -84,16 +84,16 @@ activeren die je tijdens het project zal gebruiken.
     keer te doen):
 
 ``` bash
-conda create --name <your_environment_name>
-conda install --name <your_environment_name> python=3.12
+conda create --name eit
+conda install --name eit python=3.12
 ```
 
 -   Activeer je environment en stel een project folder in (dit moet je
     elke keer doen wanneer je de terminal opent):
 
 ``` bash
-conda activate <your_environment_name>
-cd <path_to_your_project_folder>
+conda activate eit
+cd eit
 ```
 
 Je bent nu klaar om aan je project te beginnen!
@@ -128,7 +128,7 @@ Je bent nu klaar om je eerste script te schrijven!
 Enkele packages zijn onmisbaar voor een ingenieur die met Python
 applicaties werkt:
 
--   [Numpy](https://numpy.org/doc/stable/reference/index.html#reference)\
+-   [Numpy](https://numpy.org/doc/stable/reference/index.html#reference)
 -   [Matplotlib](https://matplotlib.org/stable/users/index) /
     [Seaborn](https://seaborn.pydata.org/index.html)
 
