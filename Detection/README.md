@@ -1,3 +1,5 @@
+🇳🇱 Nederlands | [🇬🇧 English](./README_en.md)
+
 # Detectie module
 
 Detecteer objecten, kleuren, randen, gezichten, mensen en nog veel meer met behulp van OpenCV.  
