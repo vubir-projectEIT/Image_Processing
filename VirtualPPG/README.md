@@ -1,6 +1,6 @@
 🇳🇱 Nederlands | [🇬🇧 English](./README_en.md)
 
-# Virtuele PPG
+# Virtual PPG
 
 Implementeer een real-time virtuele hartslagmeter, ook wel virtual PPG genoemd, met behulp van OpenCV.
 In deze module bouwen we een hartslagmeter vanaf nul met image processing tools en een eenvoudige camera.
