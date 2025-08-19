@@ -94,13 +94,17 @@ conda install --name eit python=3.12
 conda activate eit
 ```
 
--   Maak een project folder aan waarin je al je script kan bijhouden
+#### 4. Maak een project folder aan
 
+-    MacOS/Linux
+  
 ``` bash
 mkdir ~/Desktop/eit
 cd ~/Desktop/eit
 ```
 
+-    Windows
+  
 ``` bash
 mkdir %USERPROFILE%\Desktop\eit
 cd %USERPROFILE%\Desktop\eit
@@ -108,7 +112,7 @@ cd %USERPROFILE%\Desktop\eit
 
 Je bent nu klaar om aan je project te beginnen!
 
-#### 3. Stel je IDE in
+#### 4. Stel je IDE in
 
 Je Python scripts schrijven in een gewone text editor is mogelijk, maar
 niet praktisch. Ontwikkelaars gebruiken daarom een Integrated
