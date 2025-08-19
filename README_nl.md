@@ -90,7 +90,7 @@ conda install --name eit python=3.12
 -   Maak een project folder aan waarin je al je script kan bijhouden
 
 ``` bash
-mkdir eit
+mkdir ~/Desktop/eit
 cd eit
 ```
 
