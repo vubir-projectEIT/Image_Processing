@@ -1,6 +1,6 @@
 [🇳🇱 Nederlands](./README.md) | 🇬🇧 English
 
-# Recognition
+# Recognition module
 
 Recognize hand gestures and faces using opencv and mediapipe. 
 In this module, we dive deeper into the recognition of humans in images so that they can interact with computers. 
