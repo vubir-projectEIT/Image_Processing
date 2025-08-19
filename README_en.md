@@ -1,3 +1,5 @@
+[🇳🇱 Nederlands](./README.md) | [🇬🇧 English](./README_en.md)
+
 # Project EIT - Image processing toolbox
 
 A set of Python modules to use image processing in your project.
