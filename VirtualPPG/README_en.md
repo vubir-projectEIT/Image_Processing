@@ -1,3 +1,5 @@
+[🇳🇱 Nederlands](./README.md) | 🇬🇧 English
+
 # Virtual PPG
 
 Implement a real-time virtual heart rate sensor, also called virtual PPG, using opencv. 
