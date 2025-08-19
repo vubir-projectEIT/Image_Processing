@@ -84,7 +84,6 @@ activeren die je tijdens het project zal gebruiken.
     keer te doen):
 
 ``` bash
-conda create --name eit
 conda install --name eit python=3.12
 ```
 
