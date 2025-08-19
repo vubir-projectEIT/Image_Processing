@@ -7,7 +7,7 @@ In deze module focussen we ons op het tracken van de positie van onze objecten i
 We bekijken geavanceerde methoden om iets belangrijks in het beeld te vinden en het te blijven volgen zonder het spoor te verliezen.
 Zodra je objecten optimaal kan tracken, kan je hier alles rond bouwen om een mooi project te maken.  
 
-### [Eenvoudig tracken](https://github.com/vubir-projectEIT/Image_Processing/edit/main/Tracking/Simple)
+### [Eenvoudige tracking](https://github.com/vubir-projectEIT/Image_Processing/edit/main/Tracking/Simple)
 
 Verken verschillende eenvoudige methodes voor object tracking geïmplementeerd in OpenCV.
 Duik in de logica van de verschillende methodes en kies de beste methode voor jouw applicatie.  
