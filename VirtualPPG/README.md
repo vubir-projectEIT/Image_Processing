@@ -36,30 +36,30 @@ De Haar cascade face classifier is hier ideaal voor.
 Deze laat een computer snel en betrouwbaar gezichten uit beelden halen.  
 Ontdek [hier](https://github.com/vubir-projectEIT/Image_Processing/tree/main/Detection/Eye_and_face) zelf hoe Haar cascade classifiers werken!  
 
-Wanneer het gezicht uit de image is gehaald, kunnen we nog een stap verder gaan en het croppen tot een specifiekere regio van interesse.  
-We proberen immers de hartslagen te detecteren door veranderingen in de huidskleur te meten.  
-We kunnen dus gerust de ogen weglaten, of enkel het voorhoofd behouden.  
+Wanneer het gezicht uit het beeld is gehaald, kunnen we nog een stap verder gaan en het croppen tot een specifiekere regio van interesse.
+We proberen immers de hartslagen te detecteren door veranderingen in de huidskleur te meten.
+We kunnen dus gerust de ogen weglaten, of enkel het voorhoofd behouden.
 Bekijk de volledige implementatie van deze stap in het bestand *Virtual_PPG_helpers.py*!  
 
 #### Extractie van het kleursignaal
 
-We kunnen nu een regio van interesse extraheren uit één input image. Mooi! Maar dit is niet genoeg om de hartslag in de tijd te analyseren.  
-We weten dat de regio van interesse die we uit de beelden halen, licht pulseert aan een tempo dat gecorreleerd is aan onze hartslag.  
-De volgende stap is dus om dit kleurpulseren in de tijd vast te leggen via een reeks frames.  
-Voor elk nieuw input image dat we ontvangen, extraheren we de regio van interesse en halen we de kleurwaarden eruit.  
-Om onze input nog verder te vereenvoudigen, nemen we het gemiddelde van de rode, groene en blauwe waarden in onze regio van interesse.  
+We kunnen nu een regio van interesse extraheren uit één input image. Mooi! Maar dit is niet genoeg om de hartslag in de tijd te analyseren.
+We weten dat de regio van interesse die we uit de beelden halen, licht pulseert aan een tempo dat gecorreleerd is aan onze hartslag.
+De volgende stap is dus om dit kleurpulseren in de tijd vast te leggen via een reeks frames.
+Voor elk nieuw input beeld dat we ontvangen, extraheren we de regio van interesse en halen we de kleurwaarden eruit.
+Om onze input nog verder te vereenvoudigen, nemen we het gemiddelde van de rode, groene en blauwe waarden in onze regio van interesse.
 Zo verkrijgen we een lijst van drie kleurwaarden per tijdstip, wat ons kleursignaal oplevert.  
 
 #### Independent component analysis
 
-We hebben onze input stream van images (video) nu vereenvoudigd tot een stream van drie waarden: gemiddelde rood, groen en blauw in de regio van interesse.  
-Net zoals de huidskleur die door een camera wordt vastgelegd een mix is van rood, groen en blauw, is ook het pulserende signaal dat we zoeken verspreid over deze drie kanalen.  
-Met deze extra stap van independent component analysis kunnen we het kleursignaal ontwarren in het meest interessante pulssignaal en de andere signalen.  
-Ontdek zelf wat independent component analysis is en hoe het werkt!  
+We hebben onze input stream van images (video) nu vereenvoudigd tot een stream van drie waarden: gemiddelde rood, groen en blauw in de regio van interesse.
+Net zoals de huidskleur die door een camera wordt vastgelegd een mix is van rood, groen en blauw, is ook het pulserende signaal dat we zoeken verspreid over deze drie kanalen.
+Met deze extra stap van independent component analysis kunnen we het kleursignaal ontwarren in het meest interessante pulssignaal en de andere signalen.
+Ontdek [hier](https://www.geeksforgeeks.org/machine-learning/ml-independent-component-analysis/) zelf wat independent component analysis is en hoe het werkt!  
 
 #### Hartslagschatting
 
-Na de drie vorige stappen hebben we nu drie signalen die de kleurverandering in de regio van interesse over tijd weergeven.  
-Nu identificeren we het signaal dat overeenkomt met de menselijke hartslag en schatten we het aantal slagen per minuut van je hart.  
-We gebruiken Fourier analyse om de frequentie te extraheren die de hoogste piek heeft in het Fourier spectrum.  
+Na de drie vorige stappen hebben we nu drie signalen die de kleurverandering in de regio van interesse over tijd weergeven.
+Nu identificeren we het signaal dat overeenkomt met de menselijke hartslag en schatten we het aantal slagen per minuut van je hart.
+We gebruiken Fourier analyse om de frequentie te extraheren die de hoogste piek heeft in het Fourier spectrum.
 Deze frequentie komt overeen met je hartslag (in Hertz).  
