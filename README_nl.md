@@ -146,6 +146,11 @@ applicaties werkt:
 -   [Matplotlib](https://matplotlib.org/stable/users/index) /
     [Seaborn](https://seaborn.pydata.org/index.html)
 
+``` bash
+pip install numpy
+pip install matplotlib
+```
+
 #### 2. OpenCV
 
 [OpenCV (Open Source Computer Vision
