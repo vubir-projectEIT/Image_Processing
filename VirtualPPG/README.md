@@ -30,7 +30,7 @@ This is way too much information to be processed, and most of it is not relevant
 We will thus first extract the region of the head and apply some masks to remove less interesting regions.
 The Haar cascade face classifier is ideal for this.
 It allows a computer to very quickly and repeatably extract faces from images.
-Check for yourself how Haar cascade classifiers work!
+Check [here](https://github.com/vubir-projectEIT/Image_Processing/tree/main/Detection/Eye_and_face) for yourself how Haar cascade classifiers work!
 
 Once the face is extracted from the image, we can go a step further and crop it to a more specific region of interest.
 Indeed, we are trying to detect the pulses of your heart by measuring changes in the color of the skin. 
