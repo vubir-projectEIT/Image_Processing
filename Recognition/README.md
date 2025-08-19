@@ -2,7 +2,7 @@
 
 # Recognition module
 
-Herken handgebaren en gezichten met behulp van OpenCV en Mediapipe.  
+Herken handgebaren en gezichten met behulp van OpenCV en Mediapipe.
 In deze module duiken we dieper in de herkenning van mensen in beelden zodat ze kunnen interageren met computers.  
 We leren begrijpen hoe onze computer menselijke eigenschappen zoals handen en gezichten kan herkennen en hoe we dit kunnen optimaliseren voor real-time interactie.
 We bekijken de snelste en krachtigste machine learning modellen die voor deze taken worden gebruikt en leren hoe we een image kunnen verwerken met deze tools.
