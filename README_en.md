@@ -1,4 +1,4 @@
-[🇳🇱 Nederlands](./README.md) | [🇬🇧 English](./README_en.md)
+[🇳🇱 Nederlands](./README.md) | 🇬🇧 English
 
 # Project EIT - Image processing toolbox
 
