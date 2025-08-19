@@ -82,6 +82,9 @@ activeren die je tijdens het project zal gebruiken.
 
 -   Open je Terminal (MacOS/Linux) of Anaconda Prompt (Windows)
 
+<img height="350" alt="MacOS Terminal" src="https://github.com/user-attachments/assets/736567fd-a9c7-4e43-81cb-bc14e5d7091d">
+<img height="350" alt="Windows Anaconda Prompt" src="https://github.com/user-attachments/assets/49962f75-c2d1-4950-918a-eafb0a3888e4">
+
 -   Maak je environment aan en installeer Python (dit hoef je maar één
     keer te doen):
 
