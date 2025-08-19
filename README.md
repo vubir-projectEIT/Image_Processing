@@ -1,4 +1,6 @@
+<div align="right">
 🇳🇱 Nederlands | [🇬🇧 English](./README_en.md)
+</div>
 
 # Project EIT - Image processing toolbox
 
