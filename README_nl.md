@@ -94,7 +94,7 @@ conda install --name eit python=3.12
 conda activate eit
 ```
 
-#### 4. Maak een project folder aan
+#### 3. Maak een project folder aan
 
 -    MacOS/Linux
   
