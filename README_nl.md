@@ -87,12 +87,18 @@ activeren die je tijdens het project zal gebruiken.
 conda install --name eit python=3.12
 ```
 
+-   Maak een project folder aan waarin je al je script kan bijhouden
+
+``` bash
+mkdir eit
+cd eit
+```
+
 -   Activeer je environment en stel een project folder in (dit moet je
     elke keer doen wanneer je de terminal opent):
 
 ``` bash
 conda activate eit
-cd eit
 ```
 
 Je bent nu klaar om aan je project te beginnen!
