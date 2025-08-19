@@ -71,6 +71,8 @@ guide](https://docs.anaconda.com/anaconda/install/) en maak je [eerste
 Python
 programma](https://docs.anaconda.com/anaconda/getting-started/hello-world/)!
 
+[<img width="1728" alt="Screenshot 2024-02-23 at 13 02 22" src="https://github.com/vubir-projectEIT/Image_Processing/assets/152272505/c96af1be-6622-4fca-9b58-d3c694fd112b">](https://www.anaconda.com/download/success)
+
 #### 2. Stel je environment in
 
 De tweede stap is het instellen van je environment zodat je volledige
