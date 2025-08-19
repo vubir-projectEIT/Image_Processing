@@ -137,7 +137,7 @@ Je bent nu klaar om je eerste script te schrijven!
 
 ### Nuttige packages en dependencies
 
-#### 1. Usual imports
+#### 1. Onmisbare imports
 
 Enkele packages zijn onmisbaar voor een ingenieur die met Python
 applicaties werkt:
