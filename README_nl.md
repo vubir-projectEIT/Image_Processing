@@ -104,15 +104,15 @@ conda activate eit
 -    MacOS/Linux
   
 ``` bash
-mkdir ~/Desktop/eit
-cd ~/Desktop/eit
+mkdir ~/Desktop/ProjectEIT
+cd ~/Desktop/ProjectEIT
 ```
 
 -    Windows
   
 ``` bash
-mkdir %USERPROFILE%\Desktop\eit
-cd %USERPROFILE%\Desktop\eit
+mkdir %USERPROFILE%\Desktop\ProjectEIT
+cd %USERPROFILE%\Desktop\ProjectEIT
 ```
 
 Je bent nu klaar om aan je project te beginnen!
