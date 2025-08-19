@@ -1,3 +1,5 @@
+[🇳🇱 Nederlands](./README.md) | 🇬🇧 English
+
 # Recognition
 
 Recognize hand gestures and faces using opencv and mediapipe. 
