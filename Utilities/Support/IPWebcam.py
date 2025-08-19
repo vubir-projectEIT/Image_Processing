@@ -1,30 +1,23 @@
 """ IMPORTS """
 
 import cv2
-import time
 
 
 """ LOCAL SERVER """
 
-username = "camera"
-password = "eit123"
-ip_adress = "10.240.78.159"
-port = "1812"
+ip_address = "10.240.20.239"
+port = "8080"
 
 
 """ MAIN """
 
 if __name__ == '__main__':
 
-    url = f"https://{username}:{password}@{ip_adress}:{port}/video"
+    url = f"https://{ip_address}:{port}/video"
 
     cap = cv2.VideoCapture(url)
 
-    fps = 0
-
     while cap.isOpened():
-
-        t = time.time()
 
         ret, frame = cap.read()
 
@@ -35,9 +28,7 @@ if __name__ == '__main__':
         if k == 27:
             break
 
-        fps = (fps + 1 / (time.time() - t)) / 2
-
-    print(f"Using this setup, I can get {int(fps)} frames per seconds",
+    print(f"Using this setup, I can get {int(cap.get(cv2.CAP_PROP_FPS))} frames per seconds",
           f"at a resolution of {int(cap.get(3))}x{int(cap.get(4))}")
 
     cap.release()
