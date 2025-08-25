@@ -94,7 +94,7 @@ activeren die je tijdens het project zal gebruiken.
     keer te doen):
 
 ``` bash
-conda install --name eit python=3.12
+conda create --name eit python=3.12
 ```
 
 -   Activeer je environment (dit moet je
@@ -157,8 +157,8 @@ applicaties werkt:
     [Seaborn](https://seaborn.pydata.org/index.html)
 
 ``` bash
-pip install numpy
-pip install matplotlib
+pip install numpy==1.26.4
+pip install matplotlib==3.10.5
 ```
 
 #### 2. OpenCV
@@ -173,7 +173,7 @@ Terminal (MacOS/Linux) of Anaconda Prompt (Windows). Zorg dat je
 environment geactiveerd is!
 
 ``` bash
-pip install opencv-contrib-python==4.9.0.80
+pip install opencv-contrib-python==4.11.0.86
 ```
 
 #### 3. Scikit-learn
@@ -186,7 +186,7 @@ je Terminal (MacOS/Linux) of Anaconda Prompt (Windows). Zorg dat je
 environment geactiveerd is!
 
 ``` bash
-conda install scikit-learn
+conda install scikit-learn==1.6.1
 ```
 
 #### 4. Mediapipe
@@ -202,5 +202,5 @@ je Terminal (MacOS/Linux) of Anaconda Prompt (Windows). Zorg dat je
 environment geactiveerd is!
 
 ``` bash
-pip install mediapipe==0.10.18
+pip install mediapipe==0.10.21
 ```
