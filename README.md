@@ -73,7 +73,8 @@ guide](https://docs.anaconda.com/anaconda/install/) en maak je [eerste
 Python
 programma](https://docs.anaconda.com/anaconda/getting-started/hello-world/)!
 
-[<img width="1728" alt="Screenshot 2024-02-23 at 13 02 22" src="https://github.com/vubir-projectEIT/Image_Processing/assets/152272505/c96af1be-6622-4fca-9b58-d3c694fd112b">](https://www.anaconda.com/download/success)
+[<img src="https://github.com/vubir-projectEIT/Image_Processing/assets/152272505/c96af1be-6622-4fca-9b58-d3c694fd112b" style="width:100%;">](https://www.anaconda.com/download/success)
+
 
 #### 2. Stel je environment in
 
@@ -84,8 +85,10 @@ activeren die je tijdens het project zal gebruiken.
 
 -   Open je Terminal (MacOS/Linux) of Anaconda Prompt (Windows)
 
-<img height="350" alt="MacOS Terminal" src="https://github.com/user-attachments/assets/736567fd-a9c7-4e43-81cb-bc14e5d7091d">
-<img height="350" alt="Windows Anaconda Prompt" src="https://github.com/user-attachments/assets/49962f75-c2d1-4950-918a-eafb0a3888e4">
+<p float="left">
+    <img alt="MacOS Terminal" src="https://github.com/user-attachments/assets/736567fd-a9c7-4e43-81cb-bc14e5d7091d" style="width:47%;">
+    <img alt="Windows Anaconda Prompt" src="https://github.com/user-attachments/assets/49962f75-c2d1-4950-918a-eafb0a3888e4" style="width:47%;">
+</p>
 
 -   Maak je environment aan en installeer Python (dit hoef je maar één
     keer te doen):
