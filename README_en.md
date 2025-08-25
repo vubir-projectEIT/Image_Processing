@@ -49,7 +49,7 @@ The second step will be to set up your environment to have full control over the
 - Create your environment and install Python (you only need to do this once):
 
 ``` bash
-conda install --name eit python=3.12
+conda create --name eit python=3.12
 ```
 
 - Activate your environment (you have to do this every time you open your terminal):
@@ -105,8 +105,8 @@ Several packages are a must for an engineer when developing any kind of Python a
 - [Matplotlib](https://matplotlib.org/stable/users/index) / [Seaborn](https://seaborn.pydata.org/index.html)
 
 ``` bash
-pip install numpy
-pip install matplotlib
+pip install numpy==1.26.4
+pip install matplotlib==3.10.5
 ```
 
 #### 2. OpenCV
@@ -114,7 +114,7 @@ pip install matplotlib
 [OpenCV (Open Source Computer Vision Library)](https://docs.opencv.org/4.x/) is an open-source computer vision and machine learning software library. It supports several programming languages, such as Python, Java, C, and C++.  We will, however, be using Python for most of our openCV applications in this course. Run the following command line in your Terminal (MacOS/Linux) or Anaconda Prompt (Windows). Make sure that your environment is activated!
 
 ``` bash
-pip install opencv-contrib-python==4.9.0.80
+pip install opencv-contrib-python==4.11.0.86
 ```
 
 #### 3. Scikit-learn
@@ -122,7 +122,7 @@ pip install opencv-contrib-python==4.9.0.80
 [Scikit-learn](https://scikit-learn.org/stable/) is an open-source machine learning libarary for Python. It is a very powerful combination of modules that range from the implemention of all kinds of models, to pre-processing and post-processing. Run the following command line in your Terminal (MacOS/Linux) or Anaconda Prompt (Windows). Make sure that your environment is activated!
 
 ``` bash
-conda install scikit-learn
+conda install scikit-learn==1.6.1
 ```
 
 #### 4. Mediapipe
@@ -130,5 +130,5 @@ conda install scikit-learn
 [Mediapipe (by Google)](https://ai.google.dev/edge/mediapipe/solutions/guide) is an open-source library for artificial intelligence and machine learning. It proposes several cutting-edge trained models to perform all kinds of tasks in an efficient way. Additionally, it provides the possibility for advanced programmers to customize their models to run powerful real-time applications. Run the following command line in your Terminal (MacOS/Linux) or Anaconda Prompt (Windows). Make sure that your environment is activated!
 
 ``` bash
-pip install mediapipe==0.10.18
+pip install mediapipe==0.10.21
 ```
