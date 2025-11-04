@@ -7,7 +7,7 @@ In deze module bouwen we een hartslagmeter vanaf nul met image processing tools 
 We gebruiken deze case study om een overzicht te krijgen van alle stappen die nodig zijn voor image analysis en duiken dieper in een specifieke toepassing.
 Wanneer je je hartslag in real-time kan meten met je camera, kan je deze biomedische informatie koppelen aan eender welk ander apparaat of applicatie.  
 
-We voorzien je van een template [Virtual_PPG_template.py](https://github.com/vubir-projectEIT/Image_Processing/blob/main/VirtualPPG/Virtual_PPG_template.py) en enkele helperfuncties [Virtual_PPG_helpers.py](https://github.com/vubir-projectEIT/Image_Processing/blob/main/VirtualPPG/Virtual_PPG_helpers.py) om je op weg te helpen.
+We voorzien je van een template [Virtual_PPG_template.py](./Virtual_PPG_template.py) en enkele helperfuncties [Virtual_PPG_helpers.py](./Virtual_PPG_helpers.py) om je op weg te helpen.
 Laten we starten met het idee achter de virtuele PPG en een klein overzicht van wat we willen bereiken.  
 
 ### Hoe werkt het?
@@ -34,7 +34,7 @@ Dit is veel te veel informatie om te verwerken, en het meeste is niet relevant v
 Daarom extraheren we eerst de regio van het hoofd en passen we maskers toe om minder interessante gebieden te verwijderen.
 De Haar cascade face classifier is hier ideaal voor.  
 Deze laat een computer snel en betrouwbaar gezichten uit beelden halen.  
-Ontdek [hier](https://github.com/vubir-projectEIT/Image_Processing/tree/main/Detection/Eye_and_face) zelf hoe Haar cascade classifiers werken!  
+Ontdek [hier](../Detection/Eye_and_face) zelf hoe Haar cascade classifiers werken!  
 
 Wanneer het gezicht uit het beeld is gehaald, kunnen we nog een stap verder gaan en het croppen tot een specifiekere regio van interesse.
 We proberen immers de hartslagen te detecteren door veranderingen in de huidskleur te meten.
