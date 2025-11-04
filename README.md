@@ -85,8 +85,7 @@ activeren die je tijdens het project zal gebruiken.
 
 -   Open je Terminal (MacOS/Linux) of Anaconda Prompt (Windows)
 
-<p float="left">
-    <img alt="MacOS Terminal" src="https://github.com/user-attachments/assets/736567fd-a9c7-4e43-81cb-bc14e5d7091d" style="width:67%;">
+    <img alt="MacOS Terminal" src="https://github.com/vubir-projectEIT/Image_Processing/assets/3717d991-aae3-40dc-b0f9-12311b71843f" style="width:67%;">
     <img alt="Windows Anaconda Prompt" src="https://github.com/user-attachments/assets/49962f75-c2d1-4950-918a-eafb0a3888e4" style="width:31%;">
 </p>
 
