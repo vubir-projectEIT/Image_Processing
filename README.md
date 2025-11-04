@@ -7,7 +7,7 @@ project.
 
 ## Structuur van de toolbox
 
-### [Detection](https://github.com/vubir-projectEIT/Image_Processing/tree/main/Detection)
+### [Detection](./tree/main/Detection)
 
 Detecteer objecten, kleuren, randen, gezichten, mensen en nog veel meer
 met behulp van [OpenCV](https://docs.opencv.org/4.x/). In deze module
@@ -20,7 +20,7 @@ verwerken, en ook complexere tools zoals machine learning models om
 moeilijkere taken uit te voeren. Na het verwerken van het beeld kun je
 de resultaten verder gebruiken in elke applicatie.
 
-### [Recognition](https://github.com/vubir-projectEIT/Image_Processing/tree/main/Recognition)
+### [Recognition](./tree/main/Recognition)
 
 Herken handgebaren en gezichten met
 [OpenCV](https://docs.opencv.org/4.x/) en
@@ -33,7 +33,7 @@ We bekijken de snelste en krachtigste machine learning models die
 hiervoor worden gebruikt en leren hoe we een image kunnen verwerken met
 deze tools. Wat je met de resultaten doet, is aan jou.
 
-### [Tracking](https://github.com/vubir-projectEIT/Image_Processing/tree/main/Tracking)
+### [Tracking](./tree/main/Tracking)
 
 Volg objecten en regio's in images met behulp van
 [OpenCV](https://docs.opencv.org/4.x/). In deze module focussen we op
@@ -43,7 +43,7 @@ te blijven volgen zonder het spoor te verliezen. Zodra je objecten
 optimaal kunt tracken, kun je hier alles omheen bouwen om een mooi
 project te realiseren.
 
-### [Virtual PPG](https://github.com/vubir-projectEIT/Image_Processing/tree/main/VirtualPPG)
+### [Virtual PPG](./tree/main/VirtualPPG)
 
 Implementeer een real-time virtuele hartslagmeter, ook wel virtual PPG
 genoemd, met behulp van [OpenCV](https://docs.opencv.org/4.x/). In deze
@@ -73,7 +73,7 @@ guide](https://docs.anaconda.com/anaconda/install/) en maak je [eerste
 Python
 programma](https://docs.anaconda.com/anaconda/getting-started/hello-world/)!
 
-[<img src="https://github.com/vubir-projectEIT/Image_Processing/assets/152272505/c96af1be-6622-4fca-9b58-d3c694fd112b" style="width:100%;">](https://www.anaconda.com/download/success)
+[<img src="./assets/152272505/c96af1be-6622-4fca-9b58-d3c694fd112b" style="width:100%;">](https://www.anaconda.com/download/success)
 
 
 #### 2. Stel je environment in

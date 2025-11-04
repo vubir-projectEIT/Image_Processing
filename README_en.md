@@ -6,19 +6,19 @@ A set of Python modules to use image processing in your project.
 
 ## Structure of the toolbox
 
-### [Detection](https://github.com/vubir-projectEIT/Image_Processing/tree/main/Detection)
+### [Detection](./tree/main/Detection)
 
 Detect objects, colors, edges, faces, people, and much more using [OpenCV](https://docs.opencv.org/4.x/). In this module, we will explore pure image processing and attempt to detect stuff in raw images. We will look at different techniques to detect shapes, colors, or more complex features in images to create programs that can understand what they see. We will learn simple but very powerful techniques that an engineer can use to process an image and more complex tools, like machine learning models, to perform more difficult tasks. After the image is processed, you can use the results further in any application.
 
-### [Recognition](https://github.com/vubir-projectEIT/Image_Processing/tree/main/Recognition)
+### [Recognition](./tree/main/Recognition)
 
 Recognize hand gestures and faces using [OpenCV](https://docs.opencv.org/4.x/) and [Mediapipe](https://ai.google.dev/edge/mediapipe/solutions/guide). In this module, we dive deeper into the recognition of humans in images so that they can interact with computers. We will understand how our computer can understand human attributes like hands and faces and how we can optimize this to interact with our computer in real-time. We will look at the fastest and most powerful machine-learning models that are used for these tasks and learn how to process an image using those tools. What we can do with these results is up to you.
 
-### [Tracking](https://github.com/vubir-projectEIT/Image_Processing/tree/main/Tracking)
+### [Tracking](./tree/main/Tracking)
 
 Track objects and regions of images using [OpenCV](https://docs.opencv.org/4.x/). In this module, we will focus on tracking the position of our objects in our image in time. We will check advanced methods to find something important in the image and keep following it without losing its trail. Once you can track objects optimally, you can build anything around this to create a nice project.
 
-### [Virtual PPG](https://github.com/vubir-projectEIT/Image_Processing/tree/main/VirtualPPG)
+### [Virtual PPG](./tree/main/VirtualPPG)
 
 Implement a real-time virtual heart rate sensor, also called virtual PPG, using [OpenCV](https://docs.opencv.org/4.x/). In this module, we implement a heart rate sensor from scratch using image processing tools and a simple camera. We will use this case study to get an overview of all the steps required to do image analysis and dive deep into a specific application. When you are able to measure your heart rate in real-time using your camera, you can connect this biomedical information to any other device or application. 
 
