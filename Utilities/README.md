@@ -1,47 +1,58 @@
 🇳🇱 Nederlands | [🇬🇧 English](./README_en.md)
 
-# Utilities
+# Hulpmiddelen
 
-This module provides a list of helpful tools that can help you during the development of your project.
+Deze module biedt een lijst met handige tools die je kunnen helpen tijdens de ontwikkeling van je project.
 
-### [Interactive color filtering](./Support/ColorThresholdSelector.py)
+### [Interactieve kleurfiltering](./Support/ColorThresholdSelector.py)
 
-This example implements an interactive tool for determining color filtering parameters. The image is first blurred using a gaussian kernel, and adjusted for gamma. The color filtering depends on a lower and upper limit of HSV values which are used to threshold the image in HSV color-space. The script will open a window providing controls for:
+Dit voorbeeld implementeert een interactieve tool om kleurfilterparameters te bepalen. 
+De afbeelding wordt eerst geblurred met een Gaussiaanse kernel en aangepast voor gamma. 
+De kleurfiltering is afhankelijk van een lagere en hogere limiet van HSV-waarden die worden gebruikt om de afbeelding te drempelen in de HSV-kleurruimte. 
+Het script opent een venster met opties voor:
 
-  1. Blurring --> Gaussian size (Kernel) and standard deviation (Sigma)
-  2. Gamma correction --> Target value (Gamma) (16 --> 1.6)
-  3. Lower and Upper thresholds for HSV image masking within  [0-255]    
-    
-- More information: [Gamma correction](https://www.e-consystems.com/blog/camera/technology/what-is-gamma-correction-and-why-is-it-so-crucial-for-embedded-vision-systems/)
+1. Vervaging → Gaussiaanse grootte (Kernel) en standaardafwijking (Sigma)  
+2. Gamma-correctie → Doelwaarde (Gamma) (16 → 1.6)  
+3. Lagere en hogere drempels voor HSV-afbeeldingsmaskering binnen [0-255]
 
-### [Multi-threading](./Support/Thread.py)
+- Meer informatie: [Gamma-correctie](https://www.e-consystems.com/blog/camera/technology/what-is-gamma-correction-and-why-is-it-so-crucial-for-embedded-vision-systems/)
 
-This example demonstrates multithreading in Python. Multithreading is a powerful tool that allows multiple tasks to run concurrently or in the background. This keeps the main Python thread free to perform important work, such as maintaining UI responsiveness.
+### [Multithreading](./Support/Thread.py)
 
-- More information: [Threading](https://realpython.com/intro-to-python-threading/)
+Dit voorbeeld demonstreert multithreading in Python. 
+Multithreading is een krachtig hulpmiddel waarmee meerdere taken tegelijk of op de achtergrond kunnen worden uitgevoerd. 
+Hierdoor blijft de hoofd-Pythonthread vrij om belangrijk werk te doen, zoals het behouden van de responsiviteit van de gebruikersinterface.
 
-### [ROI selection](./Support/SimpleROISelector.py)
+- Meer informatie: [Threading](https://realpython.com/intro-to-python-threading/)
 
-In computer vision, a region of interest (ROI) describes a subregion of an image in pixel coordinates. An ROI is commonly represented as a vector with 4 elements [x ,y, w, h] where:
+### [ROI-selectie](./Support/SimpleROISelector.py)
 
-1. [x, y] are the pixel coordinates of the region. This can be the center or one of the corners. 
-2. [w, h] are the width and height of the region.
-   
-Selecting an ROI is a key part of later image processing stages as it provides information about the image content and focus to an algorithm and often reduces the process cost involved.
-OpenCV offers an ROI selection implementation that works on static images. Our own simple implementation of an ROI selector that allows working on live images is also made available.
+In computer vision beschrijft een region of interest (ROI) een deelgebied van een afbeelding in pixelcoördinaten. 
+Een ROI wordt meestal weergegeven als een vector met 4 elementen [x, y, w, h], waarbij:
 
-- More information: [OpenCV Examples](https://www.geeksforgeeks.org/python-opencv-selectroi-function/)
+1. [x, y] de pixelcoördinaten van het gebied zijn. Dit kan het midden of een van de hoeken zijn.  
+2. [w, h] de breedte en hoogte van het gebied zijn.  
 
-### [RealSense cameras](./RealSenseCamera)
+Het selecteren van een ROI is een belangrijk onderdeel van latere beeldverwerkingsstappen, omdat het informatie over de inhoud van de afbeelding en de focus aan een algoritme geeft.
+Vaak wordt ROI-selectie ook gebruikt om processing kosten te verminderen. 
+OpenCV biedt een ROI-selectie-implementatie voor statische afbeeldingen.
+Onze eigen eenvoudige implementatie van een ROI-selector die op live afbeeldingen werkt, is ook beschikbaar.
 
-This module demonstrates how to access the RealSense camera streams and process the images. The RealSense camera has multiple sensors that give different views of the world (RGB, depth, infrared).
+- Meer informatie: [OpenCV Voorbeelden](https://www.geeksforgeeks.org/python-opencv-selectroi-function/)
 
-To get to know the RealSense cameras, you can check out the [Intel RealSense SDK](https://intelrealsense.github.io/librealsense/python_docs/_generated/pyrealsense2.html#module-pyrealsense2) to play around with the sensors and try out some filtering and processing steps. Camera stream access may be achieved manually using the [Intel API](https://canvas.vub.be/courses/36046/files/2285191?wrap=1) or using our [RealSenseCamera](./RealSenseCamera/RealSenseCamera.py) class which simplifies setup. 
+### [RealSense-camera's](./RealSenseCamera)
 
-The RealSense cameras enable advanced image processing and merging of sensor maps. The [PointcloudViewer.py](./RealSenseCamera/PointCloudViewer2-1.py) provides a demo of the cameras highlighting spatial & temporal filtering, decimation, colorization, and lighting.
+Deze module laat zien hoe je toegang krijgt tot de RealSense-camera streams en hoe je de afbeeldingen verwerkt. 
+De RealSense-camera heeft meerdere sensoren die verschillende weergaven van de wereld geven (RGB, diepte, infrarood).
 
-- More information:  [Examples](https://github.com/IntelRealSense/librealsense/tree/development/wrappers/python/examples), [Filtering](https://github.com/IntelRealSense/librealsense/blob/jupyter/notebooks/depth_filters.ipynb)
+Om de RealSense-camera's beter te leren kennen, kun je het [Intel RealSense SDK](https://intelrealsense.github.io/librealsense/python_docs/_generated/pyrealsense2.html#module-pyrealsense2) bekijken om te experimenteren met de sensoren en enkele filter- en verwerkingsstappen uit te proberen. 
+Toegang tot de camerastream kan handmatig via de [Intel API](https://canvas.vub.be/courses/36046/files/2285191?wrap=1) of via onze [RealSenseCamera](./RealSenseCamera/RealSenseCamera.py) klasse die de setup vereenvoudigt.  
 
-### [Handling mouse events](./Support/Mouse_paint.py)
+De RealSense-camera's maken geavanceerde beeldverwerking en samenvoeging van sensorkaarten mogelijk. 
+De [PointcloudViewer.py](./RealSenseCamera/PointCloudViewer2-1.py) biedt een demo van de camera's en toont ruimtelijke en temporele filtering, decimatie, kleurcodering en belichting.
 
-This example illustrates how to handle mouse events and use them to draw objects on a screen.
+- Meer informatie: [Voorbeelden](https://github.com/IntelRealSense/librealsense/tree/development/wrappers/python/examples), [Filtering](https://github.com/IntelRealSense/librealsense/blob/jupyter/notebooks/depth_filters.ipynb)
+
+### [Muisevenementen verwerken](./Support/Mouse_paint.py)
+
+Dit voorbeeld illustreert hoe je muisevenementen kunt verwerken en deze kunt gebruiken om objecten op het scherm te tekenen.
