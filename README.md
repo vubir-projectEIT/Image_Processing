@@ -20,7 +20,7 @@ verwerken, en ook complexere tools zoals machine learning models om
 moeilijkere taken uit te voeren. Na het verwerken van het beeld kun je
 de resultaten verder gebruiken in elke applicatie.
 
-### [Recognition](./tree/main/Recognition)
+### [Recognition](./Recognition)
 
 Herken handgebaren en gezichten met
 [OpenCV](https://docs.opencv.org/4.x/) en
@@ -33,7 +33,7 @@ We bekijken de snelste en krachtigste machine learning models die
 hiervoor worden gebruikt en leren hoe we een image kunnen verwerken met
 deze tools. Wat je met de resultaten doet, is aan jou.
 
-### [Tracking](./tree/main/Tracking)
+### [Tracking](./Tracking)
 
 Volg objecten en regio's in images met behulp van
 [OpenCV](https://docs.opencv.org/4.x/). In deze module focussen we op
@@ -43,7 +43,7 @@ te blijven volgen zonder het spoor te verliezen. Zodra je objecten
 optimaal kunt tracken, kun je hier alles omheen bouwen om een mooi
 project te realiseren.
 
-### [Virtual PPG](./tree/main/VirtualPPG)
+### [Virtual PPG](./VirtualPPG)
 
 Implementeer een real-time virtuele hartslagmeter, ook wel virtual PPG
 genoemd, met behulp van [OpenCV](https://docs.opencv.org/4.x/). In deze
