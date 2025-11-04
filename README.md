@@ -7,7 +7,7 @@ project.
 
 ## Structuur van de toolbox
 
-### [Detection](./tree/main/Detection)
+### [Detection](./Detection)
 
 Detecteer objecten, kleuren, randen, gezichten, mensen en nog veel meer
 met behulp van [OpenCV](https://docs.opencv.org/4.x/). In deze module
