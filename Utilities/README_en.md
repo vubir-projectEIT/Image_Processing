@@ -14,7 +14,7 @@ This example implements an interactive tool for determining color filtering para
     
 - More information: [Gamma correction](https://www.e-consystems.com/blog/camera/technology/what-is-gamma-correction-and-why-is-it-so-crucial-for-embedded-vision-systems/)
 
-### [Multi-threading](./Support/MultiThreading.py)
+### [Multi-threading](./Support/Thread.py)
 
 This example demonstrates multithreading in Python. Multithreading is a powerful tool that allows multiple tasks to run concurrently or in the background. This keeps the main Python thread free to perform important work, such as maintaining UI responsiveness.
 
