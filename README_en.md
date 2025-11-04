@@ -41,11 +41,6 @@ The second step will be to set up your environment to have full control over the
 
 - Open your Terminal (MacOS/Linux) or Anaconda Prompt (Windows)
 
-<p float="left">
-    <img alt="MacOS Terminal" src="https://github.com/user-attachments/assets/736567fd-a9c7-4e43-81cb-bc14e5d7091d" style="width:67%;">
-    <img alt="Windows Anaconda Prompt" src="https://github.com/user-attachments/assets/49962f75-c2d1-4950-918a-eafb0a3888e4" style="width:31%;">
-</p>
-
 - Create your environment and install Python (you only need to do this once):
 
 ``` bash
