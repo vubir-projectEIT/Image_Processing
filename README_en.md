@@ -107,7 +107,7 @@ pip install opencv-contrib-python==4.11.0.86
 [Scikit-learn](https://scikit-learn.org/stable/) is an open-source machine learning libarary for Python. It is a very powerful combination of modules that range from the implemention of all kinds of models, to pre-processing and post-processing. Run the following command line in your Terminal (MacOS/Linux) or Anaconda Prompt (Windows). Make sure that your environment is activated!
 
 ``` bash
-conda install scikit-learn==1.6.1
+pip install scikit-learn==1.6.1
 ```
 
 ##### 4. Mediapipe

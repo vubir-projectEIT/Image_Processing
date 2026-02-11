@@ -168,7 +168,7 @@ je Terminal (MacOS/Linux) of Anaconda Prompt (Windows). Zorg dat je
 environment geactiveerd is!
 
 ``` bash
-conda install scikit-learn==1.6.1
+pip install scikit-learn==1.6.1
 ```
 
 ##### 4. Mediapipe
