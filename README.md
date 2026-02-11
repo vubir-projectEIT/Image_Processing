@@ -121,7 +121,7 @@ jupyter notebook
 
 Je bent nu klaar om je eerste script te schrijven!
 
-#### Nuttige packages en dependencies
+#### 3. Nuttige packages en dependencies
 
 Hieronder de command om alles te installeren, meer info over elke package vind je erna!
 
