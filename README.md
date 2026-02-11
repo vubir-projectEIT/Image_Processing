@@ -85,11 +85,14 @@ activeren die je tijdens het project zal gebruiken.
 
 -   Open je Terminal (MacOS/Linux) of Anaconda Prompt (Windows)
 
+<img src="https://github.com/user-attachments/assets/3341ce6a-4e53-4487-ac91-083b2707e310" style="width:67%;">
+<img src="https://github.com/user-attachments/assets/639be456-f9f2-42a9-be72-f0b8839405d3" style="width:32%;">
+
 -   Maak je environment aan en installeer Python (dit hoef je maar één
     keer te doen):
 
 ``` bash
-conda create --name eit python=3.12
+conda create --name eit python=3.12 spyder jupyter
 ```
 
 -   Activeer je environment (dit moet je
@@ -99,38 +102,10 @@ conda create --name eit python=3.12
 conda activate eit
 ```
 
-#### 3. Maak een project folder aan
-
--    MacOS/Linux
-  
-``` bash
-mkdir ~/Desktop/ProjectEIT
-cd ~/Desktop/ProjectEIT
-```
-
--    Windows
-  
-``` bash
-mkdir %USERPROFILE%\Desktop\ProjectEIT
-cd %USERPROFILE%\Desktop\ProjectEIT
-```
-
-Je bent nu klaar om aan je project te beginnen!
-
-#### 4. Stel je IDE in
-
 Je Python scripts schrijven in een gewone text editor is mogelijk, maar
-niet praktisch. Ontwikkelaars gebruiken daarom een Integrated
+niet praktisch. Progreammers gebruiken daarom een Integrated
 Development Environment (IDE). Het is sterk aangeraden om in Spyder (of
-PyCharm als je dat verkiest) te werken vanuit Anaconda. Volg deze
-stappen om Spyder te installeren en te gebruiken in je zojuist
-aangemaakte environment.
-
--   Installeer Spyder:
-
-``` bash
-conda install spyder
-```
+PyCharm als je dat verkiest) te werken vanuit Anaconda. Jupyter Notebook is ook handig om tutorials te overlopen.
 
 -   Start Spyder:
 
@@ -138,11 +113,23 @@ conda install spyder
 spyder
 ```
 
+- Start Jupyter Notebook
+
+``` bash
+jupyter notebook
+```
+
 Je bent nu klaar om je eerste script te schrijven!
 
-### Nuttige packages en dependencies
+#### Nuttige packages en dependencies
 
-#### 1. Onmisbare imports
+Hieronder de command om alles te installeren, meer info over elke package vind je erna!
+
+``` bash
+pip install numpy==1.26.4 matplotlib==3.10.5 opencv-contrib-python==4.11.0.86 scikit-learn==1.6.1 mediapipe==0.10.21
+```
+
+##### 1. Onmisbare imports
 
 Enkele packages zijn onmisbaar voor een ingenieur die met Python
 applicaties werkt:
@@ -156,7 +143,7 @@ pip install numpy==1.26.4
 pip install matplotlib==3.10.5
 ```
 
-#### 2. OpenCV
+##### 2. OpenCV
 
 [OpenCV (Open Source Computer Vision
 Library)](https://docs.opencv.org/4.x/) is een open-source computer
@@ -171,7 +158,7 @@ environment geactiveerd is!
 pip install opencv-contrib-python==4.11.0.86
 ```
 
-#### 3. Scikit-learn
+##### 3. Scikit-learn
 
 [Scikit-learn](https://scikit-learn.org/stable/) is een open-source
 machine learning library voor Python. Het bevat een zeer krachtige
@@ -184,7 +171,7 @@ environment geactiveerd is!
 conda install scikit-learn==1.6.1
 ```
 
-#### 4. Mediapipe
+##### 4. Mediapipe
 
 [Mediapipe (by
 Google)](https://ai.google.dev/edge/mediapipe/solutions/guide) is een
