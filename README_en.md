@@ -79,7 +79,7 @@ You are now ready to write your first script!
 Here follows the command to install all dependencies. Under that, you can find more information about the packages.
 
 ``` bash
-pip install numpy==1.26.4 matplotlib==3.10.5 opencv-contrib-python==4.11.0.86 scikit-learn==1.6.1 mediapipe==0.10.21
+pip install numpy==1.26.4 matplotlib==3.9.4 opencv-contrib-python==4.11.0.86 scikit-learn==1.6.1 mediapipe==0.10.21
 ```
 
 ##### 1. Usual imports
@@ -91,7 +91,7 @@ Several packages are a must for an engineer when developing any kind of Python a
 
 ``` bash
 pip install numpy==1.26.4
-pip install matplotlib==3.10.5
+pip install matplotlib==3.9.4
 ```
 
 ##### 2. OpenCV
