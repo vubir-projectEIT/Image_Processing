@@ -126,7 +126,7 @@ Je bent nu klaar om je eerste script te schrijven!
 Hieronder de command om alles te installeren, meer info over elke package vind je erna!
 
 ``` bash
-pip install numpy==1.26.4 matplotlib==3.10.5 opencv-contrib-python==4.11.0.86 scikit-learn==1.6.1 mediapipe==0.10.21
+pip install numpy==1.26.4 matplotlib==3.9.4 opencv-contrib-python==4.11.0.86 scikit-learn==1.6.1 mediapipe==0.10.21
 ```
 
 ##### 1. Onmisbare imports
@@ -140,7 +140,7 @@ applicaties werkt:
 
 ``` bash
 pip install numpy==1.26.4
-pip install matplotlib==3.10.5
+pip install matplotlib==3.9.4
 ```
 
 ##### 2. OpenCV
