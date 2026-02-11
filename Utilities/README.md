@@ -56,3 +56,11 @@ De [PointcloudViewer.py](./RealSenseCamera/PointCloudViewer2-1.py) biedt een dem
 ### [Muisevenementen verwerken](./Support/Mouse_paint.py)
 
 Dit voorbeeld illustreert hoe je muisevenementen kunt verwerken en deze kunt gebruiken om objecten op het scherm te tekenen.
+
+### [PyGame-OpenCV intergratie](./Support/PygameOpencv.py)
+
+Dit script laat zien hoe je frames die via je webcam met OpenCV worden ingelezen kunt weergeven op een Pygame display.
+
+### [IP Webcam](./Support/IPWebcam.py)
+
+Heb je een eenvoudige, mobiele camera met hoge resolutie nodig? Zoek niet verder dan in je broekzak. Dit voorbeeld laat zien hoe je je (Android-)telefoon via OpenCV kunt gebruiken. Voor iOS-gebruikers die MacOS gebruiken: bekijk deze [link](https://support.apple.com/guide/mac-help/use-iphone-as-a-webcam-mchl77879b8a/mac) om te zien hoe je je telefoon als native camera voor je computer kunt gebruiken.
