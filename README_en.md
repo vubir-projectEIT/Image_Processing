@@ -58,7 +58,6 @@ conda activate eit
 ```
 
 Developing your Python scripts in your text editor is possible but very impractical. Developers instead use Integrate Developers Environments, or IDE for short. It is strongly recommended to work in Spyder (or PyCharm if you prefer) from inside Anaconda. Jupyter notebooks are also nice for following tutorials. If you check 
-```
 
 - Run Spyder:
 
