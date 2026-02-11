@@ -74,7 +74,13 @@ jupyter notebook
 You are now ready to write your first script!
 
 
-#### 3. Usefull packages and dependencies
+#### 3. Useful packages and dependencies
+
+Here follows the command to install all dependencies. Under that, you can find more information about the packages.
+
+``` bash
+pip install numpy==1.26.4 matplotlib==3.10.5 opencv-contrib-python==4.11.0.86 scikit-learn==1.6.1 mediapipe==0.10.21
+```
 
 ##### 1. Usual imports
 
