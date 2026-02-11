@@ -53,5 +53,3 @@ This script shows how to display frames read through your webcam via OpenCV on a
 ### [IP Webcam](./Support/IPWebcam.py)
 
 Do you need a simple mobile, high-resolution camera, look no further than in your pocket. This example shows how to use your (Android) phone through OpenCV. For iOS users that are using MacOS, check out this [link](https://support.apple.com/guide/mac-help/use-iphone-as-a-webcam-mchl77879b8a/mac) on how to use your phone as a native camera for your computer.
-
-
