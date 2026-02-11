@@ -48,7 +48,7 @@ The second step will be to set up your environment to have full control over the
 - Create your environment and install Python (you only need to do this once):
 
 ``` bash
-conda create --name eit python=3.12
+conda create --name eit python=3.12 spyder jupyter
 ```
 
 - Activate your environment (you have to do this every time you open your terminal):
@@ -57,32 +57,7 @@ conda create --name eit python=3.12
 conda activate eit
 ```
 
-#### 3. setup a project folde
-
-- MacOS/Linux
-
-``` bash
-mkdir ~/Desktop/ProjectEIT
-cd ~/Desktop/ProjectEIT
-```
-
-- Windows
-
-``` bash
-mkdir %USERPROFILE%\Desktop\ProjectEIT
-cd %USERPROFILE%\Desktop\ProjectEIT
-```
-
-You are now ready to start your project! 
-
-#### 4. Setup your IDE
-
-Developing your Python scripts in your text editor is possible but very impractical. Developers instead use Integrate Developers Environments, or IDE for short. It is strongly recommended to work in Spyder (or PyCharm if you prefer) from inside Anaconda. Follow the following steps to install and run Spyder in your newly created environment.
-
-- Install Spyder:
-
-``` bash
-conda install spyder
+Developing your Python scripts in your text editor is possible but very impractical. Developers instead use Integrate Developers Environments, or IDE for short. It is strongly recommended to work in Spyder (or PyCharm if you prefer) from inside Anaconda. Jupyter notebooks are also nice for following tutorials. If you check 
 ```
 
 - Run Spyder:
@@ -91,12 +66,18 @@ conda install spyder
 spyder
 ```
 
+- Run Jupyter Notebook:
+
+``` bash
+jupyter notebook
+```
+
 You are now ready to write your first script!
 
 
-### Usefull packages and dependencies
+#### 3. Usefull packages and dependencies
 
-#### 1. Usual imports
+##### 1. Usual imports
 
 Several packages are a must for an engineer when developing any kind of Python application:
 
@@ -108,7 +89,7 @@ pip install numpy==1.26.4
 pip install matplotlib==3.10.5
 ```
 
-#### 2. OpenCV
+##### 2. OpenCV
 
 [OpenCV (Open Source Computer Vision Library)](https://docs.opencv.org/4.x/) is an open-source computer vision and machine learning software library. It supports several programming languages, such as Python, Java, C, and C++.  We will, however, be using Python for most of our openCV applications in this course. Run the following command line in your Terminal (MacOS/Linux) or Anaconda Prompt (Windows). Make sure that your environment is activated!
 
@@ -116,7 +97,7 @@ pip install matplotlib==3.10.5
 pip install opencv-contrib-python==4.11.0.86
 ```
 
-#### 3. Scikit-learn
+##### 3. Scikit-learn
 
 [Scikit-learn](https://scikit-learn.org/stable/) is an open-source machine learning libarary for Python. It is a very powerful combination of modules that range from the implemention of all kinds of models, to pre-processing and post-processing. Run the following command line in your Terminal (MacOS/Linux) or Anaconda Prompt (Windows). Make sure that your environment is activated!
 
@@ -124,7 +105,7 @@ pip install opencv-contrib-python==4.11.0.86
 conda install scikit-learn==1.6.1
 ```
 
-#### 4. Mediapipe
+##### 4. Mediapipe
 
 [Mediapipe (by Google)](https://ai.google.dev/edge/mediapipe/solutions/guide) is an open-source library for artificial intelligence and machine learning. It proposes several cutting-edge trained models to perform all kinds of tasks in an efficient way. Additionally, it provides the possibility for advanced programmers to customize their models to run powerful real-time applications. Run the following command line in your Terminal (MacOS/Linux) or Anaconda Prompt (Windows). Make sure that your environment is activated!
 
