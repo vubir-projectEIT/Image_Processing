@@ -8,7 +8,7 @@ We leren begrijpen hoe onze computer menselijke eigenschappen zoals handen en ge
 We bekijken de snelste en krachtigste machine learning modellen die voor deze taken worden gebruikt en leren hoe we een image kunnen verwerken met deze tools.
 Wat je met deze resultaten doet, is aan jou.  
 
-### [Gezicht herkenning](./Face)
+### [Gezicht herkenning](./Face/Face_recognition.py)
 
 Train een machine learning model om verschillende personen direct te herkennen.
 Onderzoek hoe local binary pattern histograms worden gebruikt om het gezicht van een mens te encoderen en hoe je machine learning modellen kan trainen en gebruiken.  

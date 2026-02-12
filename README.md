@@ -107,7 +107,7 @@ jupyter notebook
 
 Je bent nu klaar om je eerste script te schrijven!
 Kijk zeker naar de voorbeelden voor [Detection](./Detection), [Recognition](./Recognition), of [Tracking](./Tracking) om wat vertrouwd te geraken met image processing.
-Deze [tutorial]() over [kleur detectie](./Detection/Colour) is ook beschikbaar als je dat verkiest!
+Deze [tutorial](./Tutorial.ipynb) over [kleur detectie](./Detection/Colour) is ook beschikbaar als je dat verkiest!
 
 
 ### Nuttige packages en dependencies

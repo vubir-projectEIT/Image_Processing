@@ -8,28 +8,28 @@ We bekijken verschillende technieken om vormen, kleuren of meer complexe feature
 We leren eenvoudige maar zeer krachtige technieken die een ingenieur kan gebruiken om een image te verwerken, en ook complexere tools zoals machine learning models om moeilijkere taken uit te voeren.
 Na het verwerken van het beeld kun je de resultaten verder gebruiken in elke applicatie.  
 
-### [Blob detectie](./Blob)
+### [Blob detectie](./Blob/BlobDetection.py)
 
 Maak en test verschillende detectors voor blobs in images en extraheer objecten van interesse op basis van hun vorm.
 Verken de eenvoudige blob detector van OpenCV en stel de parameters in om elke blob nauwkeurig te detecteren.  
 
 - Meer informatie: [Simple blob detection](https://learnopencv.com/blob-detection-using-opencv-python-c/)
 
-### [Kleur detectie](./Colour)
+### [Kleur detectie](./Colour/Multiple_colours_detector.py)
 
 Maak filters voor verschillende kleuren in images en visualiseer objecten of oppervlakken op basis van hun kleur.
 Onderzoek hoe computers kleur zien en hoe je je computer de kleuren kan laten herkennen die jij wil dat hij ziet.  
 
 - Meer informatie: [Color spaces](https://learnopencv.com/color-spaces-in-opencv-cpp-python/)
 
-### [Diepte detectie](./Depth)
+### [Diepte detectie](./Depth/DepthTracker.py)
 
 Ga van een 2D naar een 3D weergave door diepte-informatie toe te voegen aan kleurenbeelden.
 Leer hoe depth images worden gemaakt en hoe je ze kan combineren met kleurbeelden om 3D kleurrepresentaties van de ruimte te krijgen.  
 
 - Meer informatie: [RealSense camera](https://github.com/IntelRealSense/librealsense/blob/jupyter/notebooks/distance_to_object.ipynb)
 
-### [Rand detectie](./Edge)
+### [Rand detectie](./Edge/EdgeDetection_OpticalFlow.py)
 
 Extraheer randen uit het beeld en ontdek het concept van optical flow.
 Ontdek hoe je een image dat bestaat uit miljoenen pixels kan vereenvoudigen met eenvoudige concepten uit image processing.  
@@ -43,7 +43,7 @@ Verken de Haar cascade classifier: wat het doet en hoe het gebruikt kan worden.
 
 - Meer informatie: [Haar cascade classification](https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html)
 
-### [Personen detectie](./People)
+### [Personen detectie](./People/People_detector.py)
 
 Maak een eenvoudig programma om mensen in beelden te detecteren.
 Verken de HOG beschrijving en hoe eenvoudige machine learning modellen deze beschrijving kunnen gebruiken om personen te identificeren.  

@@ -7,7 +7,7 @@ In this module, we will focus on tracking the position of our objects in our ima
 We will check advanced methods to find something important in the image and keep following it without losing its trail.
 Once you can track objects optimally, you can build anything around this to create a nice project.
 
-### [Simple tracking](./Simple)
+### [Simple tracking](./Simple/OpenCV_Tracker.py)
 
 Explore different simple methods for object tracking implemented by Opencv.
 Dive into the logic of the different methods and elect the best method for your application.
@@ -21,7 +21,7 @@ Investiage how depth sensing works and how to track regions of interest over tim
 
 - More information: [Kalman Filters](https://pieriantraining.com/kalman-filter-opencv-python-example/)
 
-### [ORB tracking](./ORB)
+### [ORB tracking](./ORB/ORBTracker.py)
 
 Track similar objects in a image using a efficient ORB algorithm.
 Go in depth in the feature keypoints and derived descriptors that allow ORB to quickly find objects in images.

@@ -8,7 +8,7 @@ We will understand how our computer can understand human attributes like hands a
 We will look at the fastest and most powerful machine-learning models that are used for these tasks and learn how to process an image using those tools. 
 What we can do with these results is up to you.
 
-### [Face recognition](./Face)
+### [Face recognition](./Face/Face_recognition.py)
 
 Train a machine learning model to recognize different people on the fly.
 Investigate how local binary pattern histograms are used to encode the face of a human and how to train and run machine learning models.
