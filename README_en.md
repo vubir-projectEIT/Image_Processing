@@ -105,7 +105,7 @@ spyder
 jupyter notebook
 ```
 
-You are now ready to write your first script!
+You are now ready to write your first script! Check the examples on [Detection](./Detection), [Recognition](./Recognition), and [Tracking](./Tracking) to get familiar with image processing. This [tutorial]() on [colour detection](./Detection/Colour) is also available!
 
 
 ### Useful packages and dependencies
