@@ -39,7 +39,7 @@ Wanneer je je hartslag in real-time kunt meten met je camera, kun je deze biomed
 
 ## Aan de slag
 
-### De Anaconda environment
+### Het Anaconda environment
 
 Voor deze eerste kennismaking met geavanceerd Python coding, project management, image processing en machine learning raden we aan de [Anaconda](https://anaconda.org) environment te gebruiken, een populair Python data science platform. 
 Development en exploratie worden eenvoudiger dankzij de verschillende tools die Anaconda aanbiedt.
