@@ -37,7 +37,7 @@ If not done yet, click on the following link to download [Anaconda](https://www.
 
 #### 2. Setup your environment
 
-The second step will be to set up your environment to have full control over the code that you run and the packages that you install. Follow the following steps to create and activate the environment that you will use during the project.
+An environment can be seen as a mini copy of your computer in which you only run Python code. For complex projects this is indispensable, especially when you use external packages such as numpy or opencv. Anaconda provides an easy way to create, maintain, and share environments. Follow these steps to set up the environment that you will use during the project.
 
 - Open your Terminal (MacOS/Linux) or Anaconda Prompt (Windows)
 
@@ -57,7 +57,15 @@ conda create --name eit python=3.12 spyder jupyter
 conda activate eit
 ```
 
-Developing your Python scripts in your text editor is possible but very impractical. Developers instead use Integrate Developers Environments, or IDE for short. It is strongly recommended to work in Spyder (or PyCharm if you prefer) from inside Anaconda. Jupyter notebooks are also nice for following tutorials. If you check 
+Your environment is now completely empty (apart from a few packages that are automatically downloaded along with Python). Since we are all good engineers, we won’t write all code from scratch, but instead rely on existing libraries. Below is the command to install the packages we will need. Make sure your environment is active so that the packages are installed in the correct environment.
+
+``` bash
+pip install numpy==1.26.4 matplotlib==3.9.4 opencv-contrib-python==4.11.0.86 scikit-learn==1.6.1 mediapipe==0.10.21
+```
+
+#### 3. Writing and running Python code
+
+Developing your Python scripts in your text editor is possible but very impractical. Developers instead use Integrate Developers Environments, or IDE for short. It is strongly recommended to work in Spyder (or PyCharm if you prefer) from inside Anaconda. Jupyter notebooks are also nice for following tutorials.
 
 - Run Spyder:
 
@@ -74,17 +82,13 @@ jupyter notebook
 You are now ready to write your first script!
 
 
-#### 3. Useful packages and dependencies
+### Useful packages and dependencies
 
-Here follows the command to install all dependencies. Under that, you can find more information about the packages.
-
-``` bash
-pip install numpy==1.26.4 matplotlib==3.9.4 opencv-contrib-python==4.11.0.86 scikit-learn==1.6.1 mediapipe==0.10.21
-```
+Below you will find more information about the packages you have installed in your environment.
 
 ##### 1. Usual imports
 
-Several packages are a must for an engineer when developing any kind of Python application:
+Several packages are a must for an engineer when developing any kind of Python application. :
 
 - [Numpy](https://numpy.org/doc/stable/reference/index.html#reference)
 - [Matplotlib](https://matplotlib.org/stable/users/index) / [Seaborn](https://seaborn.pydata.org/index.html)
