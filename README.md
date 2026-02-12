@@ -121,6 +121,7 @@ Deze ken je waarschijnlijk al:
 -   [Matplotlib](https://matplotlib.org/stable/users/index) /
     [Seaborn](https://seaborn.pydata.org/index.html)
 
+Voer de volgende  command line uit in je Terminal (MacOS/Linux) of Anaconda Prompt (Windows).
 Zorg dat je environment geactiveerd is!
 
 ``` bash
