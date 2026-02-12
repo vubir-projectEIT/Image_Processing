@@ -78,18 +78,17 @@ programma](https://docs.anaconda.com/anaconda/getting-started/hello-world/)!
 
 #### 2. Stel je environment in
 
-De tweede stap is het instellen van je environment zodat je volledige
-controle hebt over de code die je uitvoert en de packages die je
-installeert. Volg deze stappen om de environment aan te maken en te
-activeren die je tijdens het project zal gebruiken.
+Een environment kan je zien als een mini kopie van je computer waarin je enkel Python code runt. 
+Voor complexe projecten is dit onmisbaar, vooral wanneer je externe packages gebruikt zoals numpy of opencv.
+Anaconda levert een gemakkelijke manier om environments te maken, te onderhouden en te delen.
+Volg deze stappen om het environment in te stellen die je tijdens het project zal gebruiken.
 
 -   Open je Terminal (MacOS/Linux) of Anaconda Prompt (Windows)
 
 <img src="https://github.com/user-attachments/assets/3341ce6a-4e53-4487-ac91-083b2707e310" style="width:67%;">
 <img src="https://github.com/user-attachments/assets/639be456-f9f2-42a9-be72-f0b8839405d3" style="width:32%;">
 
--   Maak je environment aan en installeer Python (dit hoef je maar één
-    keer te doen):
+-   Maak je environment aan en installeer Python (dit hoef je maar één keer te doen):
 
 ``` bash
 conda create --name eit python=3.12 spyder jupyter
@@ -102,10 +101,21 @@ conda create --name eit python=3.12 spyder jupyter
 conda activate eit
 ```
 
-Je Python scripts schrijven in een gewone text editor is mogelijk, maar
-niet praktisch. Progreammers gebruiken daarom een Integrated
-Development Environment (IDE). Het is sterk aangeraden om in Spyder (of
-PyCharm als je dat verkiest) te werken vanuit Anaconda. Jupyter Notebook is ook handig om tutorials te overlopen.
+Je environment is nu helemaal leeg (buiten een paar packages die automatisch worden gedownload samen met Python).
+Aangezien we allemaal goede ingeneurs zijn, gaan we niet alle code van nul schrijven, maar gaan we steunen op bestaande libraries.
+Hieronder het commando om de packages te installeren die we nodig zullen hebben. 
+Wees zeker dat je environment actief is zodat de packages in het juiste environement geïnstalleerd worden.
+
+``` bash
+pip install numpy==1.26.4 matplotlib==3.9.4 opencv-contrib-python==4.11.0.86 scikit-learn==1.6.1 mediapipe==0.10.21
+```
+
+#### 3. Python code schrijven en runnen
+
+Je Python scripts schrijven in een gewone text editor is mogelijk, maar niet praktisch. 
+Programmers gebruiken daarom een Integrated Development Environment (IDE). 
+Het is sterk aangeraden om in Spyder (of PyCharm als je dat verkiest) te werken vanuit Anaconda. 
+Jupyter Notebook is ook handig om tutorials te overlopen.
 
 -   Start Spyder:
 
@@ -121,18 +131,15 @@ jupyter notebook
 
 Je bent nu klaar om je eerste script te schrijven!
 
-#### 3. Nuttige packages en dependencies
 
-Hieronder de command om alles te installeren, meer info over elke package vind je erna!
+### Nuttige packages en dependencies
 
-``` bash
-pip install numpy==1.26.4 matplotlib==3.9.4 opencv-contrib-python==4.11.0.86 scikit-learn==1.6.1 mediapipe==0.10.21
-```
+Hieronder vind je meer informatie over de packages die je geïnstalleerd hebt in je environment. 
 
 ##### 1. Onmisbare imports
 
-Enkele packages zijn onmisbaar voor een ingenieur die met Python
-applicaties werkt:
+Enkele packages zijn onmisbaar voor een ingenieur die met Python applicaties werkt. 
+Deze ken je waarschijnlijk al:
 
 -   [Numpy](https://numpy.org/doc/stable/reference/index.html#reference)
 -   [Matplotlib](https://matplotlib.org/stable/users/index) /
