@@ -24,7 +24,7 @@ if __name__ == '__main__':
     cap = "YOUR CODE HERE"
 
     # Path to gesture recognizer model
-    model_path = 'Absolute/path/to/model'
+    model_path = "YOUR CODE HERE"
 
     # Initialize hand recognizer
     hand_recognizer = HandRecognizer(model_path)

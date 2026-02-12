@@ -52,12 +52,9 @@ def get_heart_rate(window, fps, window_size, min_heart_rate=45, max_heart_rate=2
 """ PARAMETERS TO SET """
 
 # Path to cv2/data. If this gives an error:
-#   - option 1: Find the 'haarcascade_eye.xml' file on your computer and modify the path hereunder to the path of the folder containing 'haarcascade_eye.xml'.
-#   - option 2: You can also download haarcascade_eye.xml from the internet, place it in your project folder, and modify the path hereunder.
-cascade_dir = os.environ['CONDA_PREFIX'] + r"/lib/python3.12/site-packages/cv2/data"
-
-# Haar cascade face classifier path
-CASCADE_PATH = CASCADE_PATH + r"/haarcascade_frontalface_default.xml"
+#   - option 1: Find the 'haarcascade_frontalface_default.xml' file on your computer and modify the path hereunder to the path of the folder containing 'haarcascade_eye.xml'.
+#   - option 2: You can also download haarcascade_frontalface_default.xml from the internet, place it in your project folder, and modify the path hereunder.
+FACE_CASCADE_PATH = cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
 
 # Set window time in seconds
 WINDOW_TIME_SEC = 20
@@ -101,7 +98,7 @@ while True:
         # add latest sample to the color signal
         "YOUR CODE HERE"
         
-    # Calculate heart rate every one second (once have 30-second of data)
+    # Calculate once we have 20 seconds of data and heart rate every one second
     if (len(color_signal) >= window_size) and (len(color_signal) % np.ceil(fps) == 0):
         # get last N samples with N = window_size
         window = "YOUR CODE HERE"
@@ -112,17 +109,17 @@ while True:
     
     # Display heart rate
     if heart_rates:
-        # calculate BPM
+        # calculate BPM from heart_rates
         BPM = "YOUR CODE HERE"
         # display BPM
         cv2.putText(roi, f"BPM : {int(BPM)}", (100,50), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (255,255,255), 2)
     else:
         # display 'initializing...'
-        cv2.putText(roi, f"Initializing... [{int(100*len(colorSig)/window_size)}%]", (100,50), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (255,255,255), 2)
-    
-    # Show the image
+        cv2.putText(roi, f"Initializing... [{int(100*len(color_signal)/window_size)}%]", (100,50), cv2.FONT_HERSHEY_SIMPLEX, 0.75, (255,255,255), 2)
+
     if roi is None:
         roi = frame
+    # Show the image
     "YOUR CODE HERE"
     
     # Escape
