@@ -27,7 +27,7 @@ Onderzoek hoe computers kleur zien en hoe je je computer de kleuren kan laten he
 Ga van een 2D naar een 3D weergave door diepte-informatie toe te voegen aan kleurenbeelden.
 Leer hoe depth images worden gemaakt en hoe je ze kan combineren met kleurbeelden om 3D kleurrepresentaties van de ruimte te krijgen.  
 
-- Meer informatie: [RealSense camera](https://github.com/IntelRealSense/librealsense/blob/jupyter/notebooks/distance_to_object.ipynb)
+- Meer informatie: [RealSense camera](https://www.realsenseai.com/get-started-depth-camera/)
 
 ### [Rand detectie](./Edge/EdgeDetection_OpticalFlow.py)
 

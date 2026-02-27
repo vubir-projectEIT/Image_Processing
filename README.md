@@ -67,7 +67,7 @@ Volg deze stappen om het environment in te stellen die je tijdens het project za
 -   Maak je environment aan en installeer Python (dit hoef je maar één keer te doen):
 
 ``` bash
-conda create --name eit python=3.12 spyder jupyter
+conda create --name eit python=3.12 spyder
 ```
 
 -   Activeer je environment (dit moet je elke keer doen wanneer je de terminal opent):
@@ -99,7 +99,11 @@ Wees zeker dat je environement actief is!
 spyder
 ```
 
-- Start Jupyter Notebook
+- Installeer en start Jupyter Notebook
+
+``` bash
+conda install jupyter
+```
 
 ``` bash
 jupyter notebook

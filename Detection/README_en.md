@@ -27,7 +27,7 @@ Investigate how computers see color and how to make your computer see the colors
 Go from 2D to 3D view by incorporating depth information into color images. 
 Learn how depth images are created and how to combine them with color images to get 3D color representations of the space.
 
-- More information: [RealSense camera](https://github.com/IntelRealSense/librealsense/blob/jupyter/notebooks/distance_to_object.ipynb)
+- More information: [RealSense camera](https://www.realsenseai.com/get-started-depth-camera/)
 
 ### [Edge detection](./Edge/EdgeDetection_OpticalFlow.py)
 

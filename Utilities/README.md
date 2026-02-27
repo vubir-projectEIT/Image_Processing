@@ -42,7 +42,7 @@ Onze eigen eenvoudige implementatie van een ROI-selector die op live afbeeldinge
 
 ### [RealSense-camera's](./RealSenseCamera)
 
-Deze module laat zien hoe je toegang krijgt tot de RealSense-camera streams en hoe je de afbeeldingen verwerkt. 
+Deze module laat zien hoe je toegang krijgt tot de [RealSense-camera](https://www.realsenseai.com/get-started-depth-camera/) streams en hoe je de afbeeldingen verwerkt. 
 De RealSense-camera heeft meerdere sensoren die verschillende weergaven van de wereld geven (RGB, diepte, infrarood).
 
 Om de RealSense-camera's beter te leren kennen, kun je het [Intel RealSense SDK](https://intelrealsense.github.io/librealsense/python_docs/_generated/pyrealsense2.html#module-pyrealsense2) bekijken om te experimenteren met de sensoren en enkele filter- en verwerkingsstappen uit te proberen. 

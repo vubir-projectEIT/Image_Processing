@@ -67,7 +67,7 @@ Follow these steps to set up the environment that you will use during the projec
 - Create your environment and install Python (you only need to do this once):
 
 ``` bash
-conda create --name eit python=3.12 spyder jupyter
+conda create --name eit python=3.12 spyder
 ```
 
 - Activate your environment (you have to do this every time you open your terminal):
@@ -99,7 +99,11 @@ Make sure your environement is active!
 spyder
 ```
 
-- Run Jupyter Notebook:
+- Install and run Jupyter Notebook:
+
+``` bash
+conda install jupyter
+```
 
 ``` bash
 jupyter notebook
