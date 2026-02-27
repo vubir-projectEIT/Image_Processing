@@ -21,3 +21,10 @@ Gebruik een state-of-the-art hand detectie en handgebaar herkenningsmodel ontwik
 Onderzoek meer geavanceerde machine learning modellen zoals deep learning en neural networks.  
 
 - Meer informatie: [Hand gestures and landmarks](https://ai.google.dev/edge/mediapipe/solutions/vision/gesture_recognizer/python)
+
+### [Diepth predictie](./Depth/depth.py)
+
+Gebruik het state-of-the-art diepte detectie model Depth Anything om een derde dimensie toe te voegen aan je 2D beelden. 
+Onderzoek meer geavanceerde machine learning modellen zoals deep learning en neural networks.
+
+Meer informatie: [Depth Anything](https://huggingface.co/docs/transformers/tasks/monocular_depth_estimation)

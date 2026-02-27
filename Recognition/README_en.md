@@ -21,3 +21,10 @@ Use a state-of-the-art hand detection and hand gesture recognition model develop
 Investigate more advanced machine learning models like deep learning and neural networks. 
 
 - More information: [Hand gestures and landmarks](https://ai.google.dev/edge/mediapipe/solutions/vision/gesture_recognizer/python)
+
+### [Depth prediction](./Depth/depth.py)
+
+Use the state-of-the-art depth prediction model Depth Anything to add a third dimension to your 3D images. 
+Investigate more advanced machine learning models like deep learning and neural networks. 
+
+More information: [Depth Anything](https://huggingface.co/docs/transformers/tasks/monocular_depth_estimation)
