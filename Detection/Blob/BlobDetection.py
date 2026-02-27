@@ -1,6 +1,5 @@
 """ IMPORTS """
 
-import pyrealsense2 as rs
 import numpy as np
 import cv2
 
@@ -74,6 +73,7 @@ if __name__ == '__main__':
         cap = cv2.VideoCapture(0)
         
     else:
+        import pyrealsense2 as rs
         # Create the pipeline which handles all connected realsense devices
         pipeline = rs.pipeline()
         
