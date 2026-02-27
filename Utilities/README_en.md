@@ -34,7 +34,7 @@ OpenCV offers an ROI selection implementation that works on static images. Our o
 
 ### [RealSense cameras](./RealSenseCamera)
 
-This module demonstrates how to access the RealSense camera streams and process the images. The RealSense camera has multiple sensors that give different views of the world (RGB, depth, infrared).
+This module demonstrates how to access the RealSense camera streams and process the images. The [RealSense camera](https://www.realsenseai.com/get-started-depth-camera/) has multiple sensors that give different views of the world (RGB, depth, infrared).
 
 To get to know the RealSense cameras, you can check out the [Intel RealSense SDK](https://intelrealsense.github.io/librealsense/python_docs/_generated/pyrealsense2.html#module-pyrealsense2) to play around with the sensors and try out some filtering and processing steps. Camera stream access may be achieved manually using the [Intel API](https://canvas.vub.be/courses/36046/files/2285191?wrap=1) or using our [RealSenseCamera](./RealSenseCamera/RealSenseCamera.py) class which simplifies setup. 
 
