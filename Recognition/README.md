@@ -28,3 +28,10 @@ Gebruik het state-of-the-art diepte detectie model Depth Anything om een derde d
 Onderzoek meer geavanceerde machine learning modellen zoals deep learning en neural networks.
 
 Meer informatie: [Depth Anything](https://huggingface.co/docs/transformers/tasks/monocular_depth_estimation)
+
+### [Lichaamspositie predictie](./Pose)
+
+Gebruik een state-of-the-art lichaamspositie herkenningsmodel ontwikkeld door Google. 
+Onderzoek meer geavanceerde machine learning modellen zoals deep learning en neural networks.
+
+Meer informatie: [Lichaamspositie](https://developers.google.com/ml-kit/vision/pose-detection)

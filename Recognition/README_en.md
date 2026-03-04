@@ -28,3 +28,10 @@ Use the state-of-the-art depth prediction model Depth Anything to add a third di
 Investigate more advanced machine learning models like deep learning and neural networks. 
 
 More information: [Depth Anything](https://huggingface.co/docs/transformers/tasks/monocular_depth_estimation)
+
+### [Pose prediction](./Pose)
+
+Use a state-of-the-art body pose recognition model developed by Google.
+Investigate more advanced machine learning models like deep learning and neural networks. 
+
+Meer informatie: [Body pose](https://developers.google.com/ml-kit/vision/pose-detection)
