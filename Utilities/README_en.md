@@ -4,6 +4,8 @@
 
 This module provides a list of helpful tools that can help you during the development of your project.
 
+## Support
+
 ### [Interactive color filtering](./Support/ColorThresholdSelector.py)
 
 This example implements an interactive tool for determining color filtering parameters. The image is first blurred using a gaussian kernel, and adjusted for gamma. The color filtering depends on a lower and upper limit of HSV values which are used to threshold the image in HSV color-space. The script will open a window providing controls for:
@@ -13,12 +15,6 @@ This example implements an interactive tool for determining color filtering para
   3. Lower and Upper thresholds for HSV image masking within [0-255]    
     
 - More information: [Gamma correction](https://www.e-consystems.com/blog/camera/technology/what-is-gamma-correction-and-why-is-it-so-crucial-for-embedded-vision-systems/)
-
-### [Multi-threading](./Support/Thread.py)
-
-This example demonstrates multithreading in Python. Multithreading is a powerful tool that allows multiple tasks to run concurrently or in the background. This keeps the main Python thread free to perform important work, such as maintaining UI responsiveness.
-
-- More information: [Threading](https://realpython.com/intro-to-python-threading/)
 
 ### [ROI selection](./Support/SimpleROISelector.py)
 
@@ -32,16 +28,6 @@ OpenCV offers an ROI selection implementation that works on static images. Our o
 
 - More information: [OpenCV Examples](https://www.geeksforgeeks.org/python-opencv-selectroi-function/)
 
-### [RealSense cameras](./RealSenseCamera)
-
-This module demonstrates how to access the RealSense camera streams and process the images. The [RealSense camera](https://www.realsenseai.com/get-started-depth-camera/) has multiple sensors that give different views of the world (RGB, depth, infrared).
-
-To get to know the RealSense cameras, you can check out the [Intel RealSense SDK](https://intelrealsense.github.io/librealsense/python_docs/_generated/pyrealsense2.html#module-pyrealsense2) to play around with the sensors and try out some filtering and processing steps. Camera stream access may be achieved manually using the [Intel API](https://canvas.vub.be/courses/36046/files/2285191?wrap=1) or using our [RealSenseCamera](./RealSenseCamera/RealSenseCamera.py) class which simplifies setup. 
-
-The RealSense cameras enable advanced image processing and merging of sensor maps. The [PointcloudViewer.py](./RealSenseCamera/PointCloudViewer2-1.py) provides a demo of the cameras highlighting spatial & temporal filtering, decimation, colorization, and lighting.
-
-- More information:  [Examples](https://github.com/IntelRealSense/librealsense/tree/development/wrappers/python/examples), [Filtering](https://github.com/IntelRealSense/librealsense/blob/jupyter/notebooks/depth_filters.ipynb)
-
 ### [Handling mouse events](./Support/Mouse_paint.py)
 
 This example illustrates how to handle mouse events and use them to draw objects on a screen.
@@ -54,7 +40,37 @@ This script shows how to display frames read through your webcam via OpenCV on a
 
 Do you need a simple mobile, high-resolution camera, look no further than in your pocket. This example shows how to use your (Android) phone with [IP Webcam](https://play.google.com/store/apps/details?id=com.pas.webcam&hl=fr&pli=1) through OpenCV. For iOS users that are using MacOS, check out this [link](https://support.apple.com/guide/mac-help/use-iphone-as-a-webcam-mchl77879b8a/mac) on how to use your phone as a native camera for your computer.
 
+## Efficiency
+
+### [Multi-threading](./Efficiency/Thread.py)
+
+This example demonstrates multithreading in Python. Multithreading is a powerful tool that allows multiple tasks to run concurrently or in the background. This keeps the main Python thread free to perform important work, such as maintaining UI responsiveness.
+
+- More information: [Threading](https://realpython.com/intro-to-python-threading/)
+
+### [Threading camera](./Efficiency/CameraStream.py)
+
+For projects that need more compute while having the camera is gathering frames. Ipmort the CameraStream class as a module in Python.
+
+### [Threading serial connectie](./Efficiency/SerialStream.py)
+
+For projects that need more compute while having the serial connection is gathering messages. Ipmort the SerialStream class as a module in Python.
+
+## Homography
+
 ### [Homography](./Support/Homography/Homography.py)
 
 Working with flat surfaces in 3D? 
 This script shows you how to rectify images that are distoreded by the camera angle.
+
+## RealSense camera
+
+### [RealSense cameras](./RealSenseCamera)
+
+This module demonstrates how to access the RealSense camera streams and process the images. The [RealSense camera](https://www.realsenseai.com/get-started-depth-camera/) has multiple sensors that give different views of the world (RGB, depth, infrared).
+
+To get to know the RealSense cameras, you can check out the [Intel RealSense SDK](https://intelrealsense.github.io/librealsense/python_docs/_generated/pyrealsense2.html#module-pyrealsense2) to play around with the sensors and try out some filtering and processing steps. Camera stream access may be achieved manually using the [Intel API](https://canvas.vub.be/courses/36046/files/2285191?wrap=1) or using our [RealSenseCamera](./RealSenseCamera/RealSenseCamera.py) class which simplifies setup. 
+
+The RealSense cameras enable advanced image processing and merging of sensor maps. The [PointcloudViewer.py](./RealSenseCamera/PointCloudViewer2-1.py) provides a demo of the cameras highlighting spatial & temporal filtering, decimation, colorization, and lighting.
+
+- More information:  [Examples](https://github.com/IntelRealSense/librealsense/tree/development/wrappers/python/examples), [Filtering](https://github.com/IntelRealSense/librealsense/blob/jupyter/notebooks/depth_filters.ipynb)
