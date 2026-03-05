@@ -5,38 +5,6 @@
 Een verzameling Python modules om image processing te gebruiken in je
 project.
 
-## Structuur van de toolbox
-
-### [Detection](./Detection)
-
-Detecteer objecten, kleuren, randen, gezichten, mensen en nog veel meer met behulp van [OpenCV](https://docs.opencv.org/4.x/). 
-In deze module verkennen we pure image processing en proberen we dingen te detecteren in raw images. 
-We bekijken verschillende technieken om vormen, kleuren of meer complexe features te detecteren in beelden, zodat we programma's kunnen maken die begrijpen wat ze zien. 
-We leren eenvoudige maar krachtige technieken die een ingenieur kan gebruiken om een image te verwerken, en ook complexere tools zoals machine learning models om moeilijkere taken uit te voeren. 
-Na het verwerken van het beeld kun je de resultaten verder gebruiken in elke applicatie.
-
-### [Recognition](./Recognition)
-
-Herken handgebaren en gezichten met [OpenCV](https://docs.opencv.org/4.x/) en [Mediapipe](https://ai.google.dev/edge/mediapipe/solutions/guide). 
-In deze module duiken we dieper in de herkenning van mensen in images zodat ze kunnen interageren met computers. 
-We leren begrijpen hoe onze computer menselijke eigenschappen zoals handen en gezichten kan herkennen en hoe we dit kunnen optimaliseren voor real-time interactie.
-We bekijken de snelste en krachtigste machine learning models die hiervoor worden gebruikt en leren hoe we een image kunnen verwerken met deze tools. 
-Wat je met de resultaten doet, is aan jou.
-
-### [Tracking](./Tracking)
-
-Volg objecten en regio's in images met behulp van [OpenCV](https://docs.opencv.org/4.x/). 
-In deze module focussen we op het tracken van de positie van onze objecten in de tijd. 
-We bekijken geavanceerde methodes om iets belangrijks in het beeld te vinden en het te blijven volgen zonder het spoor te verliezen. 
-Zodra je objecten optimaal kunt tracken, kun je hier alles omheen bouwen om een mooi project te realiseren.
-
-### [Virtual PPG](./VirtualPPG)
-
-Implementeer een real-time virtuele hartslagmeter, ook wel virtual PPG genoemd, met behulp van [OpenCV](https://docs.opencv.org/4.x/). 
-In deze module bouwen we een hartslagmeter vanaf nul met image processing tools en een eenvoudige camera. 
-We gebruiken deze case study om een overzicht te krijgen van alle stappen die nodig zijn voor image analysis en duiken dieper in een specifieke toepassing. 
-Wanneer je je hartslag in real-time kunt meten met je camera, kun je deze biomedische informatie koppelen aan andere apparaten of applicaties.
-
 ## Aan de slag
 
 ### Het Anaconda environment
@@ -46,8 +14,7 @@ Development en exploratie worden eenvoudiger dankzij de verschillende tools die 
 
 #### 1. Installeer Anaconda
 
-Als je dit nog niet gedaan hebt, klik dan op de volgende link om [Anaconda](https://www.anaconda.com/download/success) te downloaden voor jouw operating system. 
-Volg de [installation guide](https://docs.anaconda.com/anaconda/install/) en maak je [eerste Python programma](https://docs.anaconda.com/anaconda/getting-started/hello-world/)!
+Als je dit nog niet gedaan hebt, klik dan op de volgende [link](https://www.anaconda.com/download/success) om Anaconda te downloaden voor jouw operating system. 
 
 [<img src="https://github.com/vubir-projectEIT/Image_Processing/assets/152272505/c96af1be-6622-4fca-9b58-d3c694fd112b" style="width:100%;">](https://www.anaconda.com/download/success)
 
@@ -99,22 +66,58 @@ Wees zeker dat je environement actief is!
 spyder
 ```
 
-- Installeer en start Jupyter Notebook
+Je bent nu klaar om je eerste script te schrijven!
+Kijk zeker naar de voorbeelden voor [Detection](./Detection), [Recognition](./Recognition), of [Tracking](./Tracking) om wat vertrouwd te geraken met image processing.
+
+#### 4. \[Optioneel\] Tutorial 
+Deze [tutorial](./Tutorial.ipynb) over [kleur detectie](./Detection/Colour) is ook beschikbaar als je dat verkiest! Hiervoor heb je Jupyter Notebook nodig.
+
+- Installeer Jupyter Notebook in je environement
 
 ``` bash
 conda install jupyter
 ```
 
+- Strat Jupyter Notebook
+
 ``` bash
 jupyter notebook
 ```
 
-Je bent nu klaar om je eerste script te schrijven!
-Kijk zeker naar de voorbeelden voor [Detection](./Detection), [Recognition](./Recognition), of [Tracking](./Tracking) om wat vertrouwd te geraken met image processing.
-Deze [tutorial](./Tutorial.ipynb) over [kleur detectie](./Detection/Colour) is ook beschikbaar als je dat verkiest!
+## Structuur van de toolbox
+
+### [Detection](./Detection)
+
+Detecteer objecten, kleuren, randen, gezichten, mensen en nog veel meer met behulp van [OpenCV](https://docs.opencv.org/4.x/). 
+In deze module verkennen we pure image processing en proberen we dingen te detecteren in raw images. 
+We bekijken verschillende technieken om vormen, kleuren of meer complexe features te detecteren in beelden, zodat we programma's kunnen maken die begrijpen wat ze zien. 
+We leren eenvoudige maar krachtige technieken die een ingenieur kan gebruiken om een image te verwerken, en ook complexere tools zoals machine learning models om moeilijkere taken uit te voeren. 
+Na het verwerken van het beeld kun je de resultaten verder gebruiken in elke applicatie.
+
+### [Recognition](./Recognition)
+
+Herken handgebaren en gezichten met [OpenCV](https://docs.opencv.org/4.x/) en [Mediapipe](https://ai.google.dev/edge/mediapipe/solutions/guide). 
+In deze module duiken we dieper in de herkenning van mensen in images zodat ze kunnen interageren met computers. 
+We leren begrijpen hoe onze computer menselijke eigenschappen zoals handen en gezichten kan herkennen en hoe we dit kunnen optimaliseren voor real-time interactie.
+We bekijken de snelste en krachtigste machine learning models die hiervoor worden gebruikt en leren hoe we een image kunnen verwerken met deze tools. 
+Wat je met de resultaten doet, is aan jou.
+
+### [Tracking](./Tracking)
+
+Volg objecten en regio's in images met behulp van [OpenCV](https://docs.opencv.org/4.x/). 
+In deze module focussen we op het tracken van de positie van onze objecten in de tijd. 
+We bekijken geavanceerde methodes om iets belangrijks in het beeld te vinden en het te blijven volgen zonder het spoor te verliezen. 
+Zodra je objecten optimaal kunt tracken, kun je hier alles omheen bouwen om een mooi project te realiseren.
+
+### [Virtual PPG](./VirtualPPG)
+
+Implementeer een real-time virtuele hartslagmeter, ook wel virtual PPG genoemd, met behulp van [OpenCV](https://docs.opencv.org/4.x/). 
+In deze module bouwen we een hartslagmeter vanaf nul met image processing tools en een eenvoudige camera. 
+We gebruiken deze case study om een overzicht te krijgen van alle stappen die nodig zijn voor image analysis en duiken dieper in een specifieke toepassing. 
+Wanneer je je hartslag in real-time kunt meten met je camera, kun je deze biomedische informatie koppelen aan andere apparaten of applicaties.
 
 
-### Nuttige packages en dependencies
+## Nuttige packages en dependencies
 
 Hieronder vind je meer informatie over de packages die je geïnstalleerd hebt in je environment. 
 

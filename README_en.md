@@ -4,38 +4,6 @@
 
 A set of Python modules to use image processing in your project.
 
-## Structure of the toolbox
-
-### [Detection](./Detection)
-
-Detect objects, colors, edges, faces, people, and much more using [OpenCV](https://docs.opencv.org/4.x/). 
-In this module, we will explore pure image processing and attempt to detect stuff in raw images. 
-We will look at different techniques to detect shapes, colors, or more complex features in images to create programs that can understand what they see. 
-We will learn simple but very powerful techniques that an engineer can use to process an image and more complex tools, like machine learning models, to perform more difficult tasks. 
-After the image is processed, you can use the results further in any application.
-
-### [Recognition](./Recognition)
-
-Recognize hand gestures and faces using [OpenCV](https://docs.opencv.org/4.x/) and [Mediapipe](https://ai.google.dev/edge/mediapipe/solutions/guide). 
-In this module, we dive deeper into the recognition of humans in images so that they can interact with computers. 
-We will understand how our computer can understand human attributes like hands and faces and how we can optimize this to interact with our computer in real-time. 
-We will look at the fastest and most powerful machine-learning models that are used for these tasks and learn how to process an image using those tools. 
-What we can do with these results is up to you.
-
-### [Tracking](./Tracking)
-
-Track objects and regions of images using [OpenCV](https://docs.opencv.org/4.x/). 
-In this module, we will focus on tracking the position of our objects in our image in time. 
-We will check advanced methods to find something important in the image and keep following it without losing its trail. 
-Once you can track objects optimally, you can build anything around this to create a nice project.
-
-### [Virtual PPG](./VirtualPPG)
-
-Implement a real-time virtual heart rate sensor, also called virtual PPG, using [OpenCV](https://docs.opencv.org/4.x/). 
-In this module, we implement a heart rate sensor from scratch using image processing tools and a simple camera. 
-We will use this case study to get an overview of all the steps required to do image analysis and dive deep into a specific application. 
-When you are able to measure your heart rate in real-time using your camera, you can connect this biomedical information to any other device or application. 
-
 ## Get started
 
 ### The Anaconda environment
@@ -45,8 +13,7 @@ Development and exploration are made easy thanks to the different tools provided
 
 #### 1. Install Anaconda
 
-If not done yet, click on the following link to download [Anaconda](https://www.anaconda.com/download/success) for your operating system. 
-Follow the [installation guide](https://docs.anaconda.com/anaconda/install/) and create your [first Python program](https://docs.anaconda.com/anaconda/getting-started/hello-world/)!
+If not done yet, click on the following [link](https://www.anaconda.com/download/success) to download Anaconda for your operating system. 
 
 [<img src="https://github.com/vubir-projectEIT/Image_Processing/assets/152272505/c96af1be-6622-4fca-9b58-d3c694fd112b" style="width:100%;">](https://www.anaconda.com/download/success)
 
@@ -90,7 +57,6 @@ pip install numpy==1.26.4 matplotlib==3.9.4 opencv-contrib-python==4.11.0.86 sci
 Developing your Python scripts in your text editor is possible but very impractical. 
 Developers instead use Integrate Developers Environments, or IDE for short. 
 It is strongly recommended to work in Spyder (or PyCharm if you prefer) from inside Anaconda. 
-Jupyter notebooks are also nice for following tutorials.
 Make sure your environement is active!
 
 - Run Spyder:
@@ -99,22 +65,58 @@ Make sure your environement is active!
 spyder
 ```
 
-- Install and run Jupyter Notebook:
+You are now ready to write your first script! 
+Check the examples on [Detection](./Detection), [Recognition](./Recognition), and [Tracking](./Tracking) to get familiar with image processing. 
+
+#### 4. \[Optional\] Tutorial
+
+This [tutorial](./Tutorial.ipynb) on [colour detection](./Detection/Colour) is also available! You will need Jupyter Notebook to check it out.
+
+- Install Jupyter Notebook in your environment:
 
 ``` bash
 conda install jupyter
 ```
 
+- Run Jupyter Notebook
+
 ``` bash
 jupyter notebook
 ```
 
-You are now ready to write your first script! 
-Check the examples on [Detection](./Detection), [Recognition](./Recognition), and [Tracking](./Tracking) to get familiar with image processing. 
-This [tutorial](./Tutorial.ipynb) on [colour detection](./Detection/Colour) is also available!
+## Structure of the toolbox
 
+### [Detection](./Detection)
 
-### Useful packages and dependencies
+Detect objects, colors, edges, faces, people, and much more using [OpenCV](https://docs.opencv.org/4.x/). 
+In this module, we will explore pure image processing and attempt to detect stuff in raw images. 
+We will look at different techniques to detect shapes, colors, or more complex features in images to create programs that can understand what they see. 
+We will learn simple but very powerful techniques that an engineer can use to process an image and more complex tools, like machine learning models, to perform more difficult tasks. 
+After the image is processed, you can use the results further in any application.
+
+### [Recognition](./Recognition)
+
+Recognize hand gestures and faces using [OpenCV](https://docs.opencv.org/4.x/) and [Mediapipe](https://ai.google.dev/edge/mediapipe/solutions/guide). 
+In this module, we dive deeper into the recognition of humans in images so that they can interact with computers. 
+We will understand how our computer can understand human attributes like hands and faces and how we can optimize this to interact with our computer in real-time. 
+We will look at the fastest and most powerful machine-learning models that are used for these tasks and learn how to process an image using those tools. 
+What we can do with these results is up to you.
+
+### [Tracking](./Tracking)
+
+Track objects and regions of images using [OpenCV](https://docs.opencv.org/4.x/). 
+In this module, we will focus on tracking the position of our objects in our image in time. 
+We will check advanced methods to find something important in the image and keep following it without losing its trail. 
+Once you can track objects optimally, you can build anything around this to create a nice project.
+
+### [Virtual PPG](./VirtualPPG)
+
+Implement a real-time virtual heart rate sensor, also called virtual PPG, using [OpenCV](https://docs.opencv.org/4.x/). 
+In this module, we implement a heart rate sensor from scratch using image processing tools and a simple camera. 
+We will use this case study to get an overview of all the steps required to do image analysis and dive deep into a specific application. 
+When you are able to measure your heart rate in real-time using your camera, you can connect this biomedical information to any other device or application. 
+
+## Useful packages and dependencies
 
 Below you will find more information about the packages you have installed in your environment.
 
