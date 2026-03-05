@@ -9,9 +9,6 @@ derived from mediapipe implementation of hand tracking and gesture recognition o
 
 """ IMPORTS """
 
-# pip install opencv-contrib-python==4.9.0.80
-# pip install mediapipe==0.10.9
-
 import cv2
 from HandRecognizer import HandRecognizer   # mediapipe dependency
 
@@ -33,7 +30,7 @@ if __name__ == '__main__':
     while True:
 
         # TODO: Get a new frame
-        frame = "YOUR CODE HERE"
+        _, frame = "YOUR CODE HERE"
         
         # TODO: Translate BGR frame to RGB frame for Mediapipe
         rgb_frame = "YOUR CODE HERE"
