@@ -1,73 +1,105 @@
-""" IMPORTS """
-
+import cv2
+import mediapipe as mp
 import time
-import cv2              # copy the following in your console: pip install opencv-contrib-python
-import numpy as np      # copy the following in your console: conda install numpy
 
-import mediapipe as mp  # copy the following in your console: pip install mediapipe
-from mediapipe.tasks.python import vision
-from mediapipe import solutions
 from mediapipe.framework.formats import landmark_pb2
 
+DRAW = mp.solutions.drawing_utils
+POSE_CONNECTIONS = mp.solutions.pose.POSE_CONNECTIONS
+STYLE = mp.solutions.drawing_styles.get_default_pose_landmarks_style()
 
-""" FUNCTIONS """
+from CameraStream import CameraStream  # get this module from Utilities/Efficiency/CameraStream.py
 
-def draw_landmarks_on_image(rgb_image, detection_result):
-  pose_landmarks_list = detection_result.pose_landmarks
 
-  for idx in range(len(pose_landmarks_list)):
-    pose_landmarks = pose_landmarks_list[idx]
-    pose_landmarks_proto = landmark_pb2.NormalizedLandmarkList()
-    pose_landmarks_proto.landmark.extend([landmark_pb2.NormalizedLandmark(x=landmark.x, y=landmark.y, z=landmark.z) for landmark in pose_landmarks])
-    solutions.drawing_utils.draw_landmarks(rgb_image, pose_landmarks_proto, solutions.pose.POSE_CONNECTIONS, solutions.drawing_styles.get_default_pose_landmarks_style())
+# Pose Landmarker
 
-  return rgb_image
-
-def create_pose_landmarker(model_path = 'pose_landmarker_lite.task'):
+def create_landmarker(model="pose_landmarker_lite.task"):
 
     BaseOptions = mp.tasks.BaseOptions
     PoseLandmarker = mp.tasks.vision.PoseLandmarker
-    PoseLandmarkerOptions = mp.tasks.vision.PoseLandmarkerOptions
-    VisionRunningMode = mp.tasks.vision.RunningMode
+    PoseOptions = mp.tasks.vision.PoseLandmarkerOptions
+    RunningMode = mp.tasks.vision.RunningMode
 
-    result_list = []
+    latest = {"result": None}
 
-    def save_result(result: vision.GestureRecognizerResult, unused_output_image: mp.Image, timestamp_ms: int):
-        result_list.append(result)
+    def callback(result, image, timestamp):
+        latest["result"] = result
 
-    options = PoseLandmarkerOptions(
-        base_options=BaseOptions(model_asset_path=model_path),
-        running_mode=VisionRunningMode.LIVE_STREAM,
-        result_callback=save_result)
+    options = PoseOptions(
+        base_options=BaseOptions(model_asset_path=model),
+        running_mode=RunningMode.LIVE_STREAM,
+        result_callback=callback
+    )
 
-    pose_landmarker = PoseLandmarker.create_from_options(options)
+    landmarker = PoseLandmarker.create_from_options(options)
 
-    return result_list, pose_landmarker
+    return landmarker, latest
 
 
-""" MAIN """
+# Draw function
 
-if __name__ == '__main__':
+def draw_landmarks(frame, result, connections=False):
 
-    cap = cv2.VideoCapture(0)
-    result_list, pose_landmarker = create_pose_landmarker()
+    if not result or not result.pose_landmarks:
+        return frame
 
-    while cap.isOpened():
+    for pose_landmarks in result.pose_landmarks:
 
-        _, frame = cap.read()
-        mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=frame)
+        proto = landmark_pb2.NormalizedLandmarkList()
+        proto.landmark.extend(
+            landmark_pb2.NormalizedLandmark(x=l.x, y=l.y, z=l.z)
+            for l in pose_landmarks
+        )
+        if connections:
+            DRAW.draw_landmarks(
+                frame,
+                proto,
+                POSE_CONNECTIONS,
+                STYLE
+            )
+        else:
+            DRAW.draw_landmarks(frame, proto)
 
-        pose_landmarker.detect_async(mp_image, time.time_ns()//1000000)
-        if result_list:
-            results = result_list[0]
-            result_list.clear()
-            frame = draw_landmarks_on_image(frame, results)
+    return frame
+
+
+if __name__ == "__main__":
+
+    # Create the camera stream and the pose landmarker
+    cam = CameraStream(0)
+    landmarker, latest = create_landmarker()
+
+    # Initialize variables for efficient frame processing
+    reduction = 2   
+    frame_counter = 0
+    inference_interval = 2
+
+    while True:
+
+        frame = cam.read()
+        if frame is None:
+            continue
+
+        # Run inference every N frames
+        if frame_counter % inference_interval == 0:
+            # Reduce the frame size for faster inference
+            reduced = cv2.resize(frame, None, fx=1 / reduction, fy=1 / reduction)
+            # Convert BGR to RGB for Mediapipe
+            rgb = cv2.cvtColor(reduced, cv2.COLOR_BGR2RGB)
+            # Create a Mediapipe Image object from the RGB frame
+            mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=rgb)
+            # Run the pose landmarker asynchronously on the reduced RGB frame
+            landmarker.detect_async(mp_image, int(time.perf_counter()*1000))
+
+        # Get the latest result and draw the landmarks on the original frame
+        result = latest["result"]
+        frame = draw_landmarks(frame, result)
 
         cv2.imshow("Pose", frame)
 
-        k = cv2.waitKey(int(1000/24)) & 0xff
-        if k == 27:
+        frame_counter += 1
+        if cv2.waitKey(1) & 0xFF == 27:
             break
 
-    cap.release()
+    cam.stop()
     cv2.destroyAllWindows()
