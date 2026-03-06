@@ -37,6 +37,7 @@ and for reference.
 
 import math
 import ctypes
+import sys
 import pyglet
 import pyglet.gl as gl
 import numpy as np
@@ -167,8 +168,10 @@ if state.color:
 image_data = pyglet.image.ImageData(image_w, image_h, convert_fmt(
 other_profile.format()), (gl.GLubyte * (image_w * image_h * 3))())
 
-# Create window for FPS
-fps_display = pyglet.window.FPSDisplay(window)
+# `pyglet.window.FPSDisplay` crashes on some pyglet 2 + Windows setups
+# (font/GDI path). We already show FPS in the window title in `run()`.
+show_fps_overlay = not (sys.platform.startswith('win') and pyglet.version.startswith('2'))
+fps_display = pyglet.window.FPSDisplay(window) if show_fps_overlay else None
 
 @window.event
 def on_mouse_drag(x, y, dx, dy, buttons, modifiers):
@@ -420,7 +423,8 @@ def on_draw():
     gl.glLoadIdentity()
     gl.glDisable(gl.GL_DEPTH_TEST)
 
-    fps_display.draw()
+    if fps_display is not None:
+        fps_display.draw()
 
 
 # Main process
