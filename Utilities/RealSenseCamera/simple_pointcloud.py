@@ -1,16 +1,9 @@
-"""
-Minimal live point-cloud viewer for Intel RealSense D435.
-
-Dependencies:
-    pip install pyrealsense2 open3d numpy
-"""
-
 import numpy as np
 import open3d as o3d
 import pyrealsense2 as rs
 
 
-def main():
+if __name__ == "__main__":
     pipeline = rs.pipeline()
     config = rs.config()
     config.enable_stream(rs.stream.depth, 640, 480, rs.format.z16, 30)
@@ -78,8 +71,3 @@ def main():
     finally:
         pipeline.stop()
         vis.destroy_window()
-
-
-if __name__ == "__main__":
-    main()
-
