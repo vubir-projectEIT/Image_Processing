@@ -146,9 +146,13 @@ def convert_fmt(fmt):
     }[fmt]
 
 
-# Create a VertexList to hold pointcloud data
-# Will pre-allocates memory according to the attributes below
-vertex_list = pyglet.graphics.vertex_list(w * h, 'v3f/stream', 't2f/stream', 'n3f/stream')
+# Create pointcloud buffers.
+# Pyglet 2 removed legacy `pyglet.graphics.vertex_list`; keep point cloud data in
+# numpy buffers and feed OpenGL directly.
+point_vertices = np.zeros((w * h, 3), dtype=np.float32)
+point_texcoords = np.zeros((w * h, 2), dtype=np.float32)
+point_normals = np.zeros((w * h, 3), dtype=np.float32)
+point_count = 0
 
 # Create and allocate memory for our color data
 other_profile = rs.video_stream_profile(profile.get_stream(other_stream))
@@ -240,26 +244,31 @@ window.push_handlers(on_key_press)
 def axes(size=1, width=1):
     """draw 3d axes"""
     gl.glLineWidth(width)
-    pyglet.graphics.draw(6, gl.GL_LINES,
-                         ('v3f', (0, 0, 0, size, 0, 0,
-                                  0, 0, 0, 0, size, 0,
-                                  0, 0, 0, 0, 0, size)),
-                         ('c3f', (1, 0, 0, 1, 0, 0,
-                                  0, 1, 0, 0, 1, 0,
-                                  0, 0, 1, 0, 0, 1,
-                                  ))
-                         )
+    gl.glBegin(gl.GL_LINES)
+
+    gl.glColor3f(1, 0, 0)
+    gl.glVertex3f(0, 0, 0)
+    gl.glVertex3f(size, 0, 0)
+
+    gl.glColor3f(0, 1, 0)
+    gl.glVertex3f(0, 0, 0)
+    gl.glVertex3f(0, size, 0)
+
+    gl.glColor3f(0, 0, 1)
+    gl.glVertex3f(0, 0, 0)
+    gl.glVertex3f(0, 0, size)
+
+    gl.glEnd()
 
 
 def frustum(intrinsics):
     """draw camera's frustum"""
     w, h = intrinsics.width, intrinsics.height
-    batch = pyglet.graphics.Batch()
-
+    lines = []
     for d in range(1, 6, 2):
         def get_point(x, y):
             p = rs.rs2_deproject_pixel_to_point(intrinsics, [x, y], d)
-            batch.add(2, gl.GL_LINES, None, ('v3f', [0, 0, 0] + p))
+            lines.append(([0, 0, 0], p))
             return p
 
         top_left = get_point(0, 0)
@@ -267,12 +276,16 @@ def frustum(intrinsics):
         bottom_right = get_point(w, h)
         bottom_left = get_point(0, h)
 
-        batch.add(2, gl.GL_LINES, None, ('v3f', top_left + top_right))
-        batch.add(2, gl.GL_LINES, None, ('v3f', top_right + bottom_right))
-        batch.add(2, gl.GL_LINES, None, ('v3f', bottom_right + bottom_left))
-        batch.add(2, gl.GL_LINES, None, ('v3f', bottom_left + top_left))
+        lines.extend(((top_left, top_right),
+                      (top_right, bottom_right),
+                      (bottom_right, bottom_left),
+                      (bottom_left, top_left)))
 
-    batch.draw()
+    gl.glBegin(gl.GL_LINES)
+    for p0, p1 in lines:
+        gl.glVertex3f(*p0)
+        gl.glVertex3f(*p1)
+    gl.glEnd()
 
 
 def grid(size=1, n=10, width=1):
@@ -280,16 +293,16 @@ def grid(size=1, n=10, width=1):
     gl.glLineWidth(width)
     s = size / float(n)
     s2 = 0.5 * size
-    batch = pyglet.graphics.Batch()
-
+    gl.glBegin(gl.GL_LINES)
     for i in range(0, n + 1):
         x = -s2 + i * s
-        batch.add(2, gl.GL_LINES, None, ('v3f', (x, 0, -s2, x, 0, s2)))
+        gl.glVertex3f(x, 0, -s2)
+        gl.glVertex3f(x, 0, s2)
     for i in range(0, n + 1):
         z = -s2 + i * s
-        batch.add(2, gl.GL_LINES, None, ('v3f', (-s2, 0, z, s2, 0, z)))
-
-    batch.draw()
+        gl.glVertex3f(-s2, 0, z)
+        gl.glVertex3f(s2, 0, z)
+    gl.glEnd()
 
 @window.event
 def on_draw():
@@ -367,7 +380,27 @@ def on_draw():
 
     if not state.scale and not state.attenuation:
         gl.glDisable(gl.GL_MULTISAMPLE)  # for true 1px points with MSAA on
-    vertex_list.draw(gl.GL_POINTS)
+
+    if point_count:
+        gl.glEnableClientState(gl.GL_VERTEX_ARRAY)
+        gl.glEnableClientState(gl.GL_TEXTURE_COORD_ARRAY)
+        gl.glVertexPointer(3, gl.GL_FLOAT, 0,
+                           ctypes.c_void_p(point_vertices.ctypes.data))
+        gl.glTexCoordPointer(2, gl.GL_FLOAT, 0,
+                             ctypes.c_void_p(point_texcoords.ctypes.data))
+
+        if state.lighting:
+            gl.glEnableClientState(gl.GL_NORMAL_ARRAY)
+            gl.glNormalPointer(gl.GL_FLOAT, 0,
+                               ctypes.c_void_p(point_normals.ctypes.data))
+
+        gl.glDrawArrays(gl.GL_POINTS, 0, point_count)
+
+        if state.lighting:
+            gl.glDisableClientState(gl.GL_NORMAL_ARRAY)
+        gl.glDisableClientState(gl.GL_TEXTURE_COORD_ARRAY)
+        gl.glDisableClientState(gl.GL_VERTEX_ARRAY)
+
     gl.glDisable(texture.target)
     if not state.scale and not state.attenuation:
         gl.glEnable(gl.GL_MULTISAMPLE)
@@ -392,7 +425,7 @@ def on_draw():
 
 # Main process
 def run(dt):
-    global w, h
+    global w, h, depth_intrinsics, point_vertices, point_texcoords, point_normals, point_count
 
     # Assign the window caption
     window.set_caption("RealSense (%dx%d) %dFPS (%.2fms) %s" %
@@ -459,22 +492,9 @@ def run(dt):
     verts = np.asarray(points.get_vertices(2)).reshape(h, w, 3)
     texcoords = np.asarray(points.get_texture_coordinates(2))
 
-    if len(vertex_list.vertices) != verts.size:
-        vertex_list.resize(verts.size // 3)
-        # need to reassign after resizing
-        vertex_list.vertices = verts.ravel()
-        vertex_list.tex_coords = texcoords.ravel()
-
-    # copy our data to pre-allocated buffers, this is faster than assigning...
-    # pyglet will take care of uploading to GPU
-    def copy(dst, src):
-        """copy numpy array to pyglet array"""
-        # timeit was mostly inconclusive, favoring slice assignment for safety
-        np.array(dst, copy=False)[:] = src.ravel()
-        # ctypes.memmove(dst, src.ctypes.data, src.nbytes)
-
-    copy(vertex_list.vertices, verts)
-    copy(vertex_list.tex_coords, texcoords)
+    point_vertices = np.ascontiguousarray(verts.reshape(-1, 3), dtype=np.float32)
+    point_texcoords = np.ascontiguousarray(texcoords.reshape(-1, 2), dtype=np.float32)
+    point_count = point_vertices.shape[0]
 
     if state.lighting:
         # compute normals
@@ -488,7 +508,7 @@ def run(dt):
         # import cv2
         # n = cv2.bilateralFilter(n, 5, 1, 1)
 
-        copy(vertex_list.normals, n)
+        point_normals = np.ascontiguousarray(n.reshape(-1, 3), dtype=np.float32)
 
     if keys[pyglet.window.key.E]:
         points.export_to_ply('./out.ply', mapped_frame)
